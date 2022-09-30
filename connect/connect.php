@@ -13,21 +13,4 @@
             echo "Kết nối thất bại: " . $error ->getMessage();
         }
     }
-
-    function pdo_execute($sql){
-        $sql_args = array_slice(func_get_args(),1);
-
-        // Thêm mới loại
-        // $sql = "Insert into loai(tenloai) value(?)";
-        // pdo_execute($sql,$tenloai);
-
-        try {
-            $connect = get_connect();
-            $stmt = $connect->prepare($sql);
-        } catch (\Throwable $th) {
-            throw $th;
-        }finally{
-            unset($connect);
-        }
-    }
 ?>
