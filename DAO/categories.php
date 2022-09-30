@@ -1,7 +1,6 @@
 <?php
     function category_selectall(){
-        $sql = "select * from categories";
-
+        $sql = "select * from categories order by name";
         return pdo_query($sql);
     }
 ?>

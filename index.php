@@ -1,11 +1,11 @@
 <?php
-    require "./connect/connect.php";
-    require "./DAO/category.php";
-    require "./PDO/pdo.php";
+    require "./DAO/categories.php";
+    require "./DAO/pdo.php";
+    require "./DAO/Users.php";
 
-    get_connect();
+    pdo_get_connect();
 
-    // $dsloai = category_selectall();
+    $ds_user = user_selectall();
 
-    // var_dump($dsloai);
+    var_dump($ds_user);
 ?>
