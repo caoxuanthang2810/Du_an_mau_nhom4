@@ -1,11 +1,11 @@
 <?php
-    require "./DAO/categories.php";
-    require "./DAO/pdo.php";
-    require "./DAO/Users.php";
+
+    require "./global.php";
+    require "./Dao/categories.php";
 
     pdo_get_connect();
 
-    $ds_user = user_selectall();
+    $cate = category_selectall();
 
-    var_dump($ds_user);
+    // var_dump($cate);
 ?>
