@@ -1,6 +1,6 @@
 <?php
-    require "./Dao/pdo.php";
-//   o_get_connect();  pd
+    // require "./Dao/pdo.php";
+    //   o_get_connect();  pd
 
     // $ds_category = user_selectall();
 
