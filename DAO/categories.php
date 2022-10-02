@@ -20,8 +20,5 @@
         $sql = "UPDATE category SET name = '?' WHERE id = '?'";
         pdo_execute($sql);
         return pdo_query($sql);
-       
-        
     }
-    var_dump(category_update())
 ?>
