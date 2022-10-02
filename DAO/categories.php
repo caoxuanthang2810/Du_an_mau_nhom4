@@ -12,7 +12,7 @@
     }
 
     function category_delete($id){
-        $sql = "DELETE FROM categories WHERE id=?";
+        $sql = "DELETE FROM categories WHERE id=$id";
         pdo_execute($sql,$id);
     }
     // update 

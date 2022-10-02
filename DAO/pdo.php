@@ -63,10 +63,13 @@
             unset($connect);
         }
     }
+<<<<<<< HEAD:global.php
     
     
 =======
     } 
       
 >>>>>>> Stashed changes
+=======
+>>>>>>> bc26f241674696ca23580cb69d16859d60654a49:DAO/pdo.php
 ?>
