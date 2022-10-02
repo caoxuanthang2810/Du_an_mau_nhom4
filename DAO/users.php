@@ -1,6 +1,6 @@
 <?php
     function user_selectall(){
-        $sql = "select * from users";
+        $sql = "SELECT * from users";
         return pdo_query($sql);
     }
 ?>
