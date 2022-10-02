@@ -1,12 +1,13 @@
 <?php
     function category_selectall(){
-        // Thêm mới loại
-        // $sql = "Insert into loai(tenloai) value(?)";
-        // pdo_execute($sql,$tenloai);
-        
         $sql = "select * from categories order by name";
         return pdo_query($sql);
     }
-
-    
+    // update 
+    function category_update(){
+        $id = 1;
+        $name = "IPhone";
+        $sql = "UPDATE category SET name = '$name' WHERE id = '$id'";
+        return pdo_query($sql);
+    }
 ?>
