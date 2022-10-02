@@ -1,23 +1,41 @@
 <?php
-    // header("location: Site/trangchu/");
+    //Chạy vào Trang Chủ
 
-    require "./global.php";
+    // header("location: Site/trangchu.php");
+
     require "./Dao/categories.php";
-    require "./Dao/users.php";
-
-    pdo_get_connect();
-
-    // $cate = category_selectall();
-
-    // var_dump($cate);
-
-    $user = user_selectall();
-
-    // var_dump($user);
-
-    foreach($user as $row){
-?>
-        <div><?php echo $row ["email"]?></div>
-<?php
+    require_once "./global.php";
+    // Xóa
+    if(isset($_GET['id'])){
+        category_delete($_GET['id']);
     }
+    $dscate = category_selectall();
+
+    foreach($dscate as $value){
+        extract($value);
+        $del_link = "index.php?id=".$id;
+        echo '<li><a href="#">'.$name.'</a> - <a href="'.$del_link.'">del</a></li>';
+
+
+    }
+
+    if(isset($_POST['btn_submit'])){
+
+        $name = $_POST['name'];
+        category_insert($name);
+    }
+
+    // lấy bản ghi theo id
+   
+
+
+    
+
+    
 ?>
+<form action="index.php" method="POST">
+        <input type="text" name="name">
+        <br>
+        <input type="submit" name="btn_submit" value="Thêm mới">
+
+</form>
