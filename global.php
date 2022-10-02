@@ -62,6 +62,4 @@
             unset($connect);
         }
     }
-    
-    
 ?>
