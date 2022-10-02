@@ -1,4 +1,5 @@
 <?php
+
     // Gọi tất cả hàm
     function category_selectall(){
         $sql = "SELECT * from categories order by name";
