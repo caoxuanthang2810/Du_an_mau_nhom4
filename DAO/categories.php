@@ -17,9 +17,11 @@
     }
     // update 
     function category_update(){
-        $id = 1;
-        $name = "IPhone";
-        $sql = "UPDATE category SET name = '$name' WHERE id = '$id'";
+        $sql = "UPDATE category SET name = '?' WHERE id = '?'";
+        pdo_execute($sql);
         return pdo_query($sql);
+       
+        
     }
+    var_dump(category_update())
 ?>

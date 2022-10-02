@@ -45,6 +45,7 @@
         }finally{
             unset($connect);
         }
+<<<<<<< Updated upstream
     }
 
     function pdo_query_one($sql){
@@ -64,4 +65,8 @@
     }
     
     
+=======
+    } 
+      
+>>>>>>> Stashed changes
 ?>
