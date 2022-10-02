@@ -1,6 +1,6 @@
 <?php
     function position_selectall(){
-        $sql = "select * from postion";
+        $sql = "SELECT * from postion";
         return pdo_query($sql);
     }
 ?>
