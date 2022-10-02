@@ -1,11 +1,11 @@
 <?php
-    function position_selectall(){
-        $sql = "SELECT * from postion";
+    function comment_selectall(){
+        $sql = "SELECT * from comments";
         return pdo_query($sql);
     }
 
-    function position_insert($id){
-        $sql = "INSERT INTO position($id) VALUES('?')";
+    function comment_insert($id){
+        $sql = "INSERT INTO comments($id) VALUES('?')";
         pdo_execute($sql,$id);
     }
 ?>

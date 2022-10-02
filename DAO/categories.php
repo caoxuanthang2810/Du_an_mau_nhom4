@@ -6,6 +6,11 @@
         return pdo_query($sql);
     }
 
+    function category_select_id($id){
+        $sql = "SELECT * from categories id=?";
+        return pdo_query($sql,$id);
+    }
+
     function category_insert($id){
         $sql = "INSERT INTO categories($id) VALUES('?')";
         pdo_execute($sql,$id);
