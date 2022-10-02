@@ -11,9 +11,9 @@
         return pdo_query($sql,$id);
     }
 
-    function category_insert($id){
-        $sql = "INSERT INTO categories($id) VALUES('?')";
-        pdo_execute($sql,$id);
+    function category_insert($name){
+        $sql = "INSERT INTO categories(name) VALUES(?)";
+        pdo_execute($sql,$name);
     }
 
     function category_delete($id){
