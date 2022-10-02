@@ -47,6 +47,7 @@
         }
     }
 
+    //
     function pdo_query_one($sql){
         $sql_args = array_slice(func_get_args(),1);
 
