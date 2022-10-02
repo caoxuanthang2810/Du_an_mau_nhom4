@@ -1,4 +1,5 @@
 <?php
+    require_once "./global.php";
     
     // Gọi tất cả hàm
     function category_selectall(){
