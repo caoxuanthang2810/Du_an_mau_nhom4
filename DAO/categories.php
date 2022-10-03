@@ -7,7 +7,7 @@
 
     // Gọi hàm danh mục theo id
     function category_select_id($id){
-        $sql = "SELECT * from categories id=?";
+        $sql = "SELECT * from categories where id=?";
         return pdo_query($sql,$id);
     }
 
