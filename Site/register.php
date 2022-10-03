@@ -75,7 +75,7 @@
     <div class="container mx-auto">
       <ul class="flex text-white py-1 justify-between">
         <li><a href="./trangchu.php">Trang chủ</a></li>
-        <li><a href="">Sản phẩm</a></li>
+        <li><a href="./danhmuc.php">Sản phẩm</a></li>
         <li><a href="./gioithieu.php">Giới thiệu</a></li>
         <li><a href="./hoidap.php">Hỏi đáp</a></li>
       </ul>
