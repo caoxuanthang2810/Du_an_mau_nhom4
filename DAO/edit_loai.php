@@ -5,9 +5,8 @@ if(isset($_POST['id'])){
 }
 if(isset($_POST['id'])){
      $id = $_POST['id'];
-      $update = category_selectid($id);
+      $update = get_categories($id);
       extract($name); // lay ten loai
-    }
 ?>
 <form action="./edit_loai.php" method="post">
     <input type="text" name="name" value="<?=$name?>"><br>
@@ -15,9 +14,5 @@ if(isset($_POST['id'])){
     <button type="submit" name="gui">Cập nhật</button>
 </form>
 
-<form action="index.php" method="POST">
-        <input type="text" name="name">
-        <br>
-        <input type="submit" name="btn_submit" value="Thêm mới">
-
-</form>
+<?php }
+?>
