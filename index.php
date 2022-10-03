@@ -1,19 +1,39 @@
 <?php
-require_once "./global.php";
-require_once "./DAO/users.php";
+    require_once "./global.php";
+    require_once "./DAO/users.php";
+    require_once "./DAO/positions.php";
+    require_once "./DAO/categories.php";
 
-    $password ="TriChua18";
-    $fullname = "Nguyễn Trọng Trí";
-    $email = "caubelangthang2003@gmail.com";
-    $phone = "0385088031";
-    $address = "Hà Nội";
-    $id_position = "1";
+    // $password ="TriChua18";
+    // $fullname = "Nguyễn Trọng Trí";
+    // $email = "caubelangthang2003@gmail.com";
+    // $phone = "0385088031";
+    // $address = "Hà Nội";
+    // $id_position = "1";
+    $name = "Helper";
 
-    // user_insert($password,$fullname,$email,$phone,$address,$id_position);
+    // position_insert($name);
 
-    $data = user_selectall();
+    // position_update($name,3);
+
+    // position_delete(3);
+
+    $data = category_select_id(1);
 
     var_dump($data);
+
+    
+
+    // user_insert($password,$fullname,$email,$phone,$address,$id_position);
+    // position_insert($name);
+
+    // category_insert($name);
+    // var_dump($data);
+    
+
+    // $data = user_selectall();
+
+    // var_dump($data);
 //Thêm mới loại 
 // if (isset($_POST['name'])) {
 //     $name = $_POST['name'];
