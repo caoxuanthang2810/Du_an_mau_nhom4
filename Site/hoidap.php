@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đăng kí</title>
+  <title>Hỏi đáp</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/public/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -75,7 +75,7 @@
     <div class="container mx-auto">
       <ul class="flex text-white py-1 justify-between">
         <li><a href="./trangchu.php">Trang chủ</a></li>
-        <li><a href="">Sản phẩm</a></li>
+        <li><a href="./danhmuc.php">Sản phẩm</a></li>
         <li><a href="./gioithieu.php">Giới thiệu</a></li>
         <li><a href="./hoidap.php">Hỏi đáp</a></li>
       </ul>
@@ -84,21 +84,22 @@
 
   <!-- Content -->
 
-  <div class="mt-2">
-    <div class="container mx-auto mt-5 mb-5">
-      <div class="mx-auto bg-red-400 w-[400px] h-[600px] rounded-lg">
-        <form action="" class="flex flex-col w-[300px] text-center ml-[50px] ">
-          <h1 class="mt-7 mb-6 text-[24px] font-bold">Đăng ký</h1>
-          <input type="text" placeholder="Nhập tên tài khoản" class="pl-2 rounded-lg h-[35px]"><br>
-          <input type="email" placeholder="Nhập email" class="pl-2 rounded-lg h-[35px]"><br>
-          <input type="password" placeholder="Nhập mật khẩu" class="pl-2 rounded-lg h-[35px]"><br>
-          <input type="password" placeholder="Nhập lại mật khẩu" class="pl-2 rounded-lg h-[35px]"><br>
-          <button class="bg-[#D73C3C] text-white text-[20px] w-[100px] h-[30px] rounded-[10px] mx-auto hover:bg-green-500">Đăng ký</button>
+  <div class="">
+    <div class="mt-2">
+      <!-- <img src="../Asset/img/header/banner.jpg" alt="" srcset=""> -->
+      <div class="container mx-auto mt-16 mb-16">
+        <div class=" mx-auto bg-red-400 w-[600px] h-[450px] rounded-lg">
+          <form action="" class="flex flex-col w-[300px]  ml-[100px] ">
+            <h1 class="mt-7 mb-6 text-[24px] font-bold text-center pl-[100px]">Hỏi đáp</h1>
+            Họ và tên<input type="text" class="pl-2 rounded-lg w-[250px] h-[35px] ml-[100px] -mt-6" placeholder="Họ và tên"><br>
+            Email<input type="email" class="pl-2 rounded-lg  w-[250px] h-[35px] ml-[100px] -mt-6" placeholder="Email"><br>
+            Câu hỏi <textarea class="pl-2 rounded-lg w-[250px] h-[70px] ml-[100px] -mt-6" placeholder="Mời nhập câu hỏi vào"></textarea><br>
 
-          <div class="text-white mt-5 text-[16px]">
-            Bạn đã có tài khoản? <a class="mr-6 text-blue-700 hover:underline hover:text-[#E52323]" href="">Đăng nhập</a>
-          </div>
-        </form>
+            <button
+              class="bg-red-500 text-white text-[20px] w-[100px] h-[30px] rounded-[10px]  ml-[170px] mt-5 hover:bg-white hover:text-green-500">Gửi</button>
+
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -207,7 +208,7 @@
           <h1 class="mb-3 text-base font-normal">Chứng nhận bởi</h1>
 
           <div class="flex">
-            <img src="./Asset/img/footer/VanTay.png" alt="">
+            <img src="../Asset/img/footer/VanTay.png" alt="">
             <img src="../Asset/img/footer/DaDangky.png" alt="">
           </div>
         </div>
@@ -215,7 +216,7 @@
       <div>
         <h1 class="mb-3 text-base font-normal">Phương thức thanh toán</h1>
 
-        <div class="flex grid grid-cols-5 w-[200px]">
+        <div class=" grid grid-cols-5 w-[200px]">
           <img class="mb-3" src="../Asset/img/footer/Tiki.png" alt="">
           <img src="../Asset/img/footer/Visa.png" alt="">
           <img src="../Asset/img/footer/Card.png" alt="">
@@ -234,7 +235,7 @@
           <h1 class="mb-3 text-base font-normal">Dịch vụ giao hàng</h1>
 
           <div>
-            <img src="../Asset/img/footer/Tikinow.png" alt="">
+            <img src="../Asset/img/footer/Modern storenow.png" alt="">
           </div>
 
         </div>
@@ -263,21 +264,8 @@
       </div>
     </div>
 
-    <div class="mt-9 py-4">
-      <p class="mb-2">Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường 12, quận 10, Thành phố Hồ
-        Chí Minh</p>
-
-      <p class="mb-2">Modern store nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp
-        tại văn
-        phòng hoặc trung tâm xử lý đơn hàng</p>
-
-      <p class="mb-2">Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh
-        cấp lần đầu ngày 06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</p>
-
-      <p class="mb-0">© 2022 - Bản quyền của Công ty TNHH Modern store</p>
-    </div>
-  </div>
 
   </div>
 </body>
+
 </html>

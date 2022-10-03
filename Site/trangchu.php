@@ -15,70 +15,70 @@
 
     <!-- Header -->
     <div class="bg-[#E52323]">
-        <div class="container mx-auto py-5 flex">
-          <div class="flex ml-[110px] md:hidden">
-            <button class="mr-2"><i class="ti-search"></i></button>
-            <input type="text" placeholder="Bạn đang tìm kiếm gì">
-          </div>
-    
-          <div class="w-3/12 md:block hidden">
-            <img class="w-[200px]" src="../Asset/img//header/Logo.png" alt="">
-          </div>
-    
-          <div class="w-7/12 md:block hidden mt-6">
-            <div class="">
-              <form class="flex" action="">
-                <input class="h-12 w-full pl-2" type="text" placeholder="Tìm kiếm sản phẩm...">
-                <button class="bg-[#f6b32dd2] text-white h-12 w-56">
-                  <span class="pr-3">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </span>
-                  Tìm Kiếm
-                </button>
-              </form>
-            </div>
-          </div>
-    
-          <div class="h-auto w-3/12 pl-3 relative md:block hidden">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="pt-2 pr-2">
-                  <!-- <img class="w-8" src="./images." alt=""> -->
-                </div>
-                <div class="pt-1 mt-6" >
-                  <div class="text-[18px] text-white">
-                    <ul class="flex mt-2 gap-1">
-                        <li><a href="./Login.php">Đăng nhập</a></li>
-                        /
-                        <li><a href="./Register.php">Đăng kí</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="text-[36px] mt-6">
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>    
-    </div>
+    <div class="container mx-auto py-5 flex">
+      <div class="flex ml-[110px] md:hidden">
+        <button class="mr-2"><i class="ti-search"></i></button>
+        <input type="text" placeholder="Bạn đang tìm kiếm gì">
+      </div>
 
-    <!-- Navbar -->
+      <div class="w-2/12 md:block hidden">
+        <img class="w-[200px]" src="../Asset/img/header/Logo.png" alt="">
+      </div>
 
-    <div class="bg-[#E52323] mt-2">
-        <div class="container mx-auto">
-            <ul class="flex text-white py-1 justify-between">
-                <li><a href="">Trang chủ</a></li>
-                <li><a href="">Sản phẩm</a></li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Hỏi đáp</a></li>
-            </ul>
+      <div class="w-7/12 md:block hidden">
+        <div class="">
+          <form class="flex" action="">
+            <input class="h-12 w-full pl-2" type="text" placeholder="Tìm kiếm sản phẩm...">
+            <button class="bg-[#f6b32dd2] text-white h-12 w-56">
+              <span class="pr-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              Tìm Kiếm
+            </button>
+          </form>
         </div>
+      </div>
+
+      <div class="h-auto w-3/12 pl-3 relative md:block hidden">
+        <div class="flex justify-between">
+          <div class="flex">
+            <div class="pt-2 pr-2">
+              <!-- <img class="w-8" src="./images." alt=""> -->
+            </div>
+            <div class="pt-1">
+              <div class="text-[18px] text-white">
+                <ul class="flex mt-2 gap-1">
+                  <li><a href="./Login.php">Đăng nhập</a></li>
+                  /
+                  <li><a href="./Register.php">Đăng kí</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="text-[36px]">
+              <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Navbar -->
+
+  <div class="bg-[#E52323] mt-2">
+    <div class="container mx-auto">
+      <ul class="flex text-white py-1 justify-between">
+        <li><a href="./trangchu.php">Trang chủ</a></li>
+        <li><a href="./danhmuc.php">Sản phẩm</a></li>
+        <li><a href="./gioithieu.php">Giới thiệu</a></li>
+        <li><a href="./hoidap.php">Hỏi đáp</a></li>
+      </ul>
+    </div>
+  </div>
 
     <!-- Content -->
 
