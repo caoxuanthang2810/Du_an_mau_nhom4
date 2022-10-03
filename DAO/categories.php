@@ -1,7 +1,7 @@
 <?php
     // Gọi tất cả bảng
     function category_selectall(){
-        $sql = "SELECT * from categories order by name";
+        $sql = "SELECT * from categories";
         return pdo_query($sql);
     }
 
@@ -19,14 +19,13 @@
 
     // Xóa danh mục
     function category_delete($id){
-        $sql = "DELETE FROM categories WHERE id= $id";
+        $sql = "DELETE FROM categories WHERE id=?";
         pdo_execute($sql,$id);
     }
 
     // Update Danh mục 
-    function category_update($id,$name){
-        $sql = "UPDATE category SET name =? WHERE id = ?";
+    function category_update($name,$id){
+        $sql = "UPDATE category SET name = ? WHERE id = ?";
         pdo_execute($sql,$name,$id);
-        
     }
 ?>
