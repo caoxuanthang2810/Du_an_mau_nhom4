@@ -8,17 +8,15 @@
         try {
             $connect = new PDO($db_url,$username,$password);
             $connect -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Kết nối thành công";
             return $connect;
         } catch (\Throwable $error) {
             echo "Kết nối thất bại: " . $error ->getMessage();
         }
     }
 
-    // Truy vấn dữ liệu
+    // Thực thi câu lệnh với database không cần dữ liệu trả về
     function pdo_execute($sql){
         $sql_args = array_slice(func_get_args(),1);
-
         try {
             $connect = pdo_get_connect();
             $stmt = $connect->prepare($sql);
@@ -31,6 +29,7 @@
     }
 
     // Truy vấn nhiều dữ liệu
+    // Lấy hết data trả về
     function pdo_query($sql){
         $sql_args = array_slice(func_get_args(),1);
 
