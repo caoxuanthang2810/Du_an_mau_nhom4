@@ -8,7 +8,7 @@
     // Gọi hàm danh mục theo id
     function category_select_id($id){
         $sql = "SELECT * from categories where id=?";
-        return pdo_query($sql,$id);
+        return pdo_query_one($sql,$id);
     }
 
     // Thêm mới danh mục
@@ -24,9 +24,9 @@
     }
 
     // Update Danh mục 
-    function category_update(){
-        $sql = "UPDATE category SET name = '?' WHERE id = '?'";
-        pdo_execute($sql);
-        return pdo_query($sql);
+    function category_update($id,$name){
+        $sql = "UPDATE category SET name =? WHERE id = ?";
+        pdo_execute($sql,$name,$id);
+        
     }
 ?>
