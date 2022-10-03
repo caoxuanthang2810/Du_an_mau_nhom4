@@ -1,23 +1,35 @@
 <?php
-if(isset($_POST['id'])){
-    category_update($_POST['id'],$_POST['name']);
-    header("location:index.php");
+require './DAO/categories.php';
+require './global.php';
+//Thêm mới loại 
+if (isset($_POST['name'])) {
+    $name = $_POST['name'];
+    category_insert($name);
 }
-if(isset($_POST['id'])){
-     $id = $_POST['id'];
-      $update = category_selectid($id);
-      extract($name); // lay ten loai
-    }
+
+
+// xóa
+if (isset($_GET['id'])) {
+    category_delete($_GET['id']);
+}
+//load lại danh sách loại 
+$dsloai = category_selectall();
+
+
+//var_dump($dsloai);
+foreach ($dsloai as $loai) {
+    extract($loai);
+    $del_link = "index.php?id=" . $id;
+    $edit_link = "edit.php?id=" . $id;
+    echo '<li> <a href="#">' . $name . '</a> - <a href="' . $del_link . '">del</a> - <a href="' . $edit_link. '">sửa</a></li>';
+}
 ?>
-<form action="./edit_loai.php" method="post">
-    <input type="text" name="name" value="<?=$name?>"><br>
-    <input type="hidden" name="id" value="<?=$id?>">
-    <button type="submit" name="gui">Cập nhật</button>
-</form>
 
-<form action="index.php" method="POST">
-        <input type="text" name="name">
-        <br>
-        <input type="submit" name="btn_submit" value="Thêm mới">
 
+
+
+<br> <br>
+<form action="index.php" method="post">
+    <input type="text" name="name"> <br>
+    <input type="submit" value="Thêm mới">
 </form>

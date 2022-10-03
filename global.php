@@ -1,4 +1,7 @@
+
+
 <?php
+    //  Kết nối database
     function pdo_get_connect(){
         $db_url = "mysql:host=202.92.5.49;dbname=gmkbrjnqhosting_nhom4;charset=utf8";
         $username = "gmkbrjnqhosting_nhom4";
@@ -14,12 +17,9 @@
         }
     }
 
+    // Truy vấn dữ liệu
     function pdo_execute($sql){
         $sql_args = array_slice(func_get_args(),1);
-
-        // Thêm mới loại
-        // $sql = "Insert into loai(tenloai) value(?)";
-        // pdo_execute($sql,$tenloai);
 
         try {
             $connect = pdo_get_connect();
@@ -36,15 +36,28 @@
     function pdo_query($sql){
         $sql_args = array_slice(func_get_args(),1);
 
-        // Thêm mới loại
-        // $sql = "Insert into loai(tenloai) value(?)";
-        // pdo_execute($sql,$tenloai);
-
         try {
             $connect = pdo_get_connect();
             $stmt = $connect->prepare($sql);
             $stmt->execute($sql_args);
             $row = $stmt->fetchAll();
+            return $row;
+        } catch (\Throwable $th) {
+            throw $th;
+        }finally{
+            unset($connect);
+        }
+    }
+
+    //
+    function pdo_query_one($sql){
+        $sql_args = array_slice(func_get_args(),1);
+
+        try {
+            $connect = pdo_get_connect();
+            $stmt = $connect->prepare($sql);
+            $stmt->execute($sql_args);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
             return $row;
         } catch (\Throwable $th) {
             throw $th;

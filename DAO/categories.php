@@ -7,9 +7,10 @@
     }
 
     function category_selectid($id){
-        $sql = "SELECT * from categories id=?";
-        return pdo_query($sql,$id);
+        $sql = "SELECT * from categories where id=?";
+        return pdo_query_one($sql,$id);
     }
+   
 
     function category_insert($name){
         $sql = "INSERT INTO categories(name) VALUES(?)";
