@@ -3,6 +3,9 @@
     require_once "./DAO/users.php";
     require_once "./DAO/positions.php";
     require_once "./DAO/categories.php";
+    require_once "./DAO/capacity.php";
+
+    header("location: Site/trangchu.php");
 
     // $password ="TriChua18";
     // $fullname = "Nguyễn Trọng Trí";
@@ -10,7 +13,7 @@
     // $phone = "0385088031";
     // $address = "Hà Nội";
     // $id_position = "1";
-    $name = "Helper";
+    // $name = "Helper";
 
     // position_insert($name);
 
@@ -18,9 +21,9 @@
 
     // position_delete(3);
 
-    $data = category_select_id(1);
+    // $data = capacity_selectall();
 
-    var_dump($data);
+    // var_dump($data);
 
     
 
@@ -68,3 +71,26 @@
     <input type="text" name="name"> <br>
     <input type="submit" value="Thêm mới">
 </form> -->
+
+<!-- <form action="" method="POST">
+    <div>Email:</div> <input type="text" name="email">
+    <div>Pass</div> <input type="text" name="password">
+    <div>Họ và tên</div> <input type="text" name="fullname">
+    <div>phone</div> <input type="text" name="phone">
+    <div>Địa chỉ:</div> <input type="text" name="address">
+    <button type="submit" name="btn">Gửi</button>
+</form> -->
+
+<?php
+    // if(isset($_POST["btn"])){
+    //     $email = $_POST["email"];
+    //     $password = $_POST["password"];
+    //     $fullname = $_POST["fullname"];
+    //     $phone = $_POST["phone"];
+    //     $address = $_POST["address"];
+    //     $id_position = 2;
+
+    //     user_insert($password,$fullname,$email,$phone,$address,$id_position);
+    // }
+
+?>
