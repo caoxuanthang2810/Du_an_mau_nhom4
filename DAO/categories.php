@@ -1,4 +1,6 @@
 <?php
+    require_once "./global.php";
+
     // Gọi tất cả bảng
     function category_selectall(){
         $sql = "SELECT * from categories";
@@ -16,16 +18,16 @@
         $sql = "INSERT INTO categories(name) VALUES(?)";
         pdo_execute($sql,$name);
     }
+    
+    // Update Danh mục 
+    function category_update($name,$id){
+        $sql = "UPDATE categories SET name = ? WHERE id = ?";
+        pdo_execute($sql,$name,$id);
+    }
 
     // Xóa danh mục
     function category_delete($id){
         $sql = "DELETE FROM categories WHERE id=?";
         pdo_execute($sql,$id);
-    }
-
-    // Update Danh mục 
-    function category_update($name,$id){
-        $sql = "UPDATE category SET name = ? WHERE id = ?";
-        pdo_execute($sql,$name,$id);
     }
 ?>
