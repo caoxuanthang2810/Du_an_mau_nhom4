@@ -1,5 +1,5 @@
 <?php
-
+  require_once './global.php';
     // Gọi tất cả hàm
     function category_selectall(){
         $sql = "SELECT * from categories order by name";
@@ -24,9 +24,10 @@
    
     }
     // update 
-    function category_update(){
-        $sql = "UPDATE category SET name = '?' WHERE id =?";
-        pdo_execute($sql);
-        return pdo_query($sql);
+    function category_update($name,$id){
+        $sql = "UPDATE categories SET name = ? WHERE id =?";
+       return pdo_execute($sql,$name,$id);
+
+        
     }
 ?>

@@ -1,6 +1,6 @@
 <?php
 require './DAO/categories.php';
-require './global.php';
+
 //Thêm mới loại 
 if (isset($_POST['name'])) {
     $name = $_POST['name'];
