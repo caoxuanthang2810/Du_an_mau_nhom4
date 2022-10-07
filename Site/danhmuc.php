@@ -107,7 +107,7 @@
 
     <div class=" flex justify-between ml-28 mr-28 pt-4 font-sans ">
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
-        <img src="img/637985700630020572_ip-14-pro-max-tim.webp "class="w-52 h-52 m-auto pt-2 "  alt="">
+        <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp "class="w-52 h-52 m-auto pt-2 "  alt="">
         <div class=" pt-3">
 
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">iPhone </p>
@@ -116,7 +116,7 @@
       </div>
 
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="img/teco.png" class="w-52 h-52 m-auto pt-2 "  alt="">
+        <img src="../Asset/img/content/teco.png" class="w-52 h-52 m-auto pt-2 "  alt="">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             OPPO </p>
@@ -124,7 +124,7 @@
       </div>
 
       <div class="  w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="img/oppo-reno7-z-(2).jpg"  class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/oppo-reno7-z-(2).jpg"  class="w-52 h-52 m-auto pt-2 " alt="">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             NOKIA </p>
@@ -133,7 +133,7 @@
       </div>
 
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
-        <img src="img/pocco.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/pocco.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             README </p>
@@ -142,7 +142,7 @@
       </div>
 
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
-        <img src="img/a4.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/a4.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             SAM SUNG </p>
@@ -163,7 +163,7 @@
 
     <div class=" flex justify-between ml-28 mr-28 pt-4 ">
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl   ">
-        <img src="img/sony-xperia-5-plus-600x600-1-600x600.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/sony-xperia-5-plus-600x600-1-600x600.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             SONY</p>
@@ -172,7 +172,7 @@
       </div>
 
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
-        <img src="img/xiaomi-poco-c3-085320-015320-600x600.jpg"  class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/xiaomi-poco-c3-085320-015320-600x600.jpg"  class="w-52 h-52 m-auto pt-2 " alt="">
 
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
@@ -182,7 +182,7 @@
       </div>
 
       <div class="  w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="img/tecno-pova-3-bac.jpg"class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/z3773077180047_97aae459f1c759744608f2fd7d0471c2.jpg"class="w-52 h-52 m-auto pt-2 " alt="">
 
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
@@ -192,7 +192,7 @@
       </div>
 
       <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="img/Nubia-Z20-5.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/Nubia-Z20-5.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
 
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
@@ -202,7 +202,7 @@
       </div>
 
       <div class="  w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="img/vivo_v23_03.jpg " class="w-52 h-52 m-auto pt-2 " alt="">
+        <img src="../Asset/img/content/vivo_v23_03.jpg " class="w-52 h-52 m-auto pt-2 " alt="">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             VIVO</p>
@@ -225,28 +225,28 @@
   <!--điện thoại-->
   <div class=" flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto ">
     <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto   hover:scale-75" alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto   hover:scale-75" alt="">
       <p class="text-xl font-semibold pt-3">SAM SUNG A-20</p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold">21.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
 
     <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
 
     <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
 
     <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75 " alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75 " alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
@@ -256,28 +256,28 @@
 
   <div class=" flex justify-between h-4/5 bg-red-400 pt-8 pb-8  max-w-screen-2xl m-auto">
     <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75 " alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75 " alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
 
     <div class="text-center bg-white w-60 rounded-3xl ">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
 
     <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75" alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75" alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
 
     <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="img/637985700630020572_ip-14-pro-max-tim.webp " class="pt-4  pt-4 m-auto  hover:scale-75" alt="">
+      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp " class="pt-4  pt-4 m-auto  hover:scale-75" alt="">
       <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
       <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
