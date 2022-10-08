@@ -48,9 +48,9 @@
             <div class="pt-1">
               <div class="text-[18px] text-white">
                 <ul class="flex mt-2 gap-1">
-                  <li><a href="./Login.php">Đăng nhập</a></li>
+                  <li class="hover:text-black"><a href="./Login.php">Đăng nhập</a></li>
                   /
-                  <li><a href="./Register.php">Đăng kí</a></li>
+                  <li class="hover:text-black"><a href="./Register.php">Đăng kí</a></li>
                 </ul>
               </div>
             </div>
@@ -69,13 +69,13 @@
 
   <!-- Navbar -->
 
-  <div class="bg-[#E52323] mt-2">
+  <div class="bg-[#E52323] mt-2 h-[40px]">
     <div class="container mx-auto">
-      <ul class="flex text-white py-1 justify-between">
-        <li><a href="./trangchu.php">Trang chủ</a></li>
-        <li><a href="./danhmuc.php">Sản phẩm</a></li>
-        <li><a href="./gioithieu.php">Giới thiệu</a></li>
-        <li><a href="./hoidap.php">Hỏi đáp</a></li>
+      <ul class="flex text-white py-1 justify-between text-[18px]">
+        <li class="hover:text-black hover:underline"><a href="./trangchu.php">Trang chủ</a></li>
+        <li class="hover:text-black hover:underline"><a href="./danhmuc.php">Sản phẩm</a></li>
+        <li class="hover:text-black hover:underline"><a href="./gioithieu.php">Giới thiệu</a></li>
+        <li class="hover:text-black hover:underline"><a href="./hoidap.php">Hỏi đáp</a></li>
       </ul>
     </div>
   </div>
