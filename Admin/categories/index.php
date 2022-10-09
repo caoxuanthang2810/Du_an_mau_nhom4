@@ -4,7 +4,7 @@
     }else if(isset($_GET['update'])){
         $VIEW_NAME = 'update.php';
     }else if(isset($_GET['remove'])){
-        header("location:../users/index.php");
+        header("location:../categories/index.php");
         die;
     }else{
         $VIEW_NAME = 'list.php';

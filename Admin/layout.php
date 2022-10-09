@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quản lý sản phẩm</title>
+        <title>Quản Trị Admin</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -22,7 +22,7 @@
 
                     <div>
                         <ul class="flex flex-col-2 gap-7">
-                            <li><a class="text-blue-600 font-bold hover:text-red-600 hover:underline" href="Trangchu.php">Trang chủ</a></li>
+                            <li><a class="text-blue-600 font-bold hover:text-red-600 hover:underline" href="../../index.php">Trang chủ</a></li>
                             <li><a class="font-bold hover:text-red-600 hover:underline" href="logout.php">Đăng xuất</a></li>
                         </ul>
                     </div>
