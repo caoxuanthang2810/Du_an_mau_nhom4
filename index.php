@@ -5,7 +5,7 @@
     require_once "./DAO/categories.php";
     require_once "./DAO/capacity.php";
 
-    header("location: Site/trangchu.php");
+    header("location: Site/index.php");
 
     // $password ="TriChua18";
     // $fullname = "Nguyễn Trọng Trí";
