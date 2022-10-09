@@ -1,18 +1,5 @@
 <?php
-    //  Kết nối database
-    function pdo_get_connect(){
-        $db_url = "mysql:host=202.92.5.49;dbname=gmkbrjnqhosting_nhom4;charset=utf8";
-        $username = "gmkbrjnqhosting_nhom4";
-        $password = "f0W9voiCVk05";
-        
-        try {
-            $connect = new PDO($db_url,$username,$password);
-            $connect -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $connect;
-        } catch (\Throwable $error) {
-            echo "Kết nối thất bại: " . $error ->getMessage();
-        }
-    }
+    
 
     // Thực thi câu lệnh với database không cần dữ liệu trả về
     function pdo_execute($sql){
@@ -62,4 +49,9 @@
             unset($connect);
         }
     }
+
+    const BASE_URL = "http://localhost/du_an_mau_nhom4/";
+    const SITE_URL = BASE_URL . 'Site/index.php';
+    const CONTENT_URL = BASE_URL . 'content/';
+    const ADMIN_URL = BASE_URL . 'Admin/';
 ?>
