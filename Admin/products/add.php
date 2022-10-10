@@ -23,12 +23,12 @@
 
             <div>
                 <label for="">Giá sản phẩm</label>
-                <input type="number" name="price">
+                <input type="number" name="price" class="border border-[#000]">
             </div>
 
             <div>
             <label for="">Mô tả sản phẩm</label>
-            <input type="text" name="detail">
+            <input type="text" name="detail" class="border border-[#000]">
             </div>
 
             <div>
