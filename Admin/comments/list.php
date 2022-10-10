@@ -37,41 +37,42 @@
             <div class="grow">
                 <div class="w-full mx-auto">
                     <div class="">
-                        <div class="bg-[#525151] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách thành viên</div>
+                        <div class="bg-[#525151] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách bình luận</div>
                         <div class="pb-[15px] border border-[#ccc] border-solid rounded-b-lg">
+                            
                             <div class="flex items-center justify-center mt-6">
                                 <table>
                                     <tr class="font-bold">
-                                        <td>Mã tài khoản</td>
-                                        <td>Gmail</td>
-                                        <td>Mật khẩu</td>
-                                        <td>Số điện thoại</td>
-                                        <td>Tên chức vụ</td>
-                                        <td>Sửa tài khoản</td>
-                                        <td>Xóa tài khoản</td>
+                                        <td>Mã bình luận</td>
+                                        <td>Nội dung</td>
+                                        <td>Thời gian</td>
+                                        <td>Tên khách hàng</td>
+                                        <td>Sản phẩm</td>
+                                        <td>Sửa</td>
+                                        <td>Xóa</td>
                                     </tr>
                                     
                                 <tr>
                                     <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
 
                                     </td>
                                     <td>
-                                        
+                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../comments/index.php?update&id=">Sửa</a>
                                     </td>
                                     <td>
-                                        
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td>
-
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../users/index.php?update&id=">Sửa</a>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../users/index.php?remove&id=">Xóa</a>
+                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../comments/index.php?remove&id=">Xóa</a>
                                     </td>
                                 </tr>
                                 </table>
