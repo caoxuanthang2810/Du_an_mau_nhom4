@@ -50,30 +50,27 @@
                                         <td>Sửa tài khoản</td>
                                         <td>Xóa tài khoản</td>
                                     </tr>
-                                    
-                                <tr>
-                                    <td>
 
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td>
-
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../users/index.php?update&id=">Sửa</a>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../users/index.php?remove&id=">Xóa</a>
-                                    </td>
-                                </tr>
+                                    <?php 
+                                        foreach($item as $key){
+                                            extract($key);
+                                    ?>
+                                        <tr>
+                                        <td><?=$id?></td>
+                                        <td><?=$email?></td>
+                                        <td><?=$password?></td>
+                                        <td><?=$fullname?></td>
+                                        <td><?=$id_position?></td>
+                                        <td>
+                                            <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../users/index.php?update&id=">Sửa</a>
+                                        </td>
+                                        <td>
+                                            <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../users/index.php?remove&id=">Xóa</a>
+                                        </td>
+                                        </tr>
+                                    <?php
+                                        }
+                                    ?>
                                 </table>
                             </div>
                         </div>
