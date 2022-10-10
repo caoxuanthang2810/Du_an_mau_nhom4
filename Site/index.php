@@ -10,7 +10,7 @@
         $VIEW_NAME = 'login.php';   
     }else if(isset($_GET['register'])){
         $VIEW_NAME = 'register.php';   
-    }else if(isset($_GET['giohang'])){
+    }else if(isset($_GET['cart'])){
         $VIEW_NAME = 'giohang.php';   
     }else{
         $VIEW_NAME = 'trangchu.php';

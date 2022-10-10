@@ -57,7 +57,7 @@
           </div>
           <div class="">
             <div class="text-[36px]">
-              <a href="">
+              <a href="./index.php?cart">
                 <i class="fa-solid fa-cart-shopping"></i>
               </a>
             </div>
