@@ -52,7 +52,7 @@
             </div>
 
             <div>
-                <button type="submit" name="btn_insert">Thêm mới</button>
+                <button type="submit" class="border border-[#000]" name="btn_insert">Thêm mới</button>
             </div>
         </form>
     </div>
