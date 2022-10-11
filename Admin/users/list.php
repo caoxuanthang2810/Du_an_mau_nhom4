@@ -46,6 +46,7 @@
                                         <td>Gmail</td>
                                         <td>Mật khẩu</td>
                                         <td>Số điện thoại</td>
+                                        <td>Họ và tên</td>
                                         <td>Tên chức vụ</td>
                                         <td>Sửa tài khoản</td>
                                         <td>Xóa tài khoản</td>
@@ -59,6 +60,7 @@
                                         <td><?=$id?></td>
                                         <td><?=$email?></td>
                                         <td><?=$password?></td>
+                                        <td><?=$phone?></td>
                                         <td><?=$fullname?></td>
                                         <td><?=$id_position?></td>
                                         <td>
