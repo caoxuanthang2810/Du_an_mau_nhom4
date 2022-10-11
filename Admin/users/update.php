@@ -13,37 +13,37 @@
         <form action="" class="w-[600px] rounded-[10px] border border-[#000] p-4 shadow shadow-[#000]" method="POST" enctype="multipart/form-data">
             <div class="">
                 <div class="font-bold mb-3 text-[18px]">Mã tài khoản</div>
-                <input type="text" name="id" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
+                <input type="text" name="id" value="<?=$id?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]" disabled>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Email</div>
-                <input type="text" name="email" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="email" value="<?=$email?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Password</div>
-                <input type="text" name="password" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="password" value="<?=$password?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Họ và Tên</div>
-                <input type="text" name="fullname" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="fullname" value="<?=$fullname?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Số điện thoại</div>
-                <input type="text" name="phone" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="phone" value="<?=$phone?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Địa chỉ</div>
-                <input type="text" name="address" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="address" value="<?=$address?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Tên chức vụ</div>
-                <input type="text" name="id_position" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
+                <input type="text" name="id_position" value="<?=$id_position?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5 flex justify-center">
