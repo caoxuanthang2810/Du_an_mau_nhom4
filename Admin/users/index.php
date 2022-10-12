@@ -39,9 +39,6 @@
         $phone = $_POST["phone"];
         $address = $_POST["address"];
         $id_position = $_POST["id_position"];
-
-        // var_dump($_REQUEST);
-        // die;
         
         user_update($password,$fullname,$email,$phone,$address,$id_position,$id);
         

@@ -17,11 +17,11 @@
         <!-- <img src="../Asset/img/header/banner.jpg" alt="" srcset=""> -->
         <div class="container mx-auto mt-16 mb-16">
             <div class=" mx-auto bg-red-400 w-[400px] h-[350px] rounded-lg">
-             <form action="" class="flex flex-col w-[300px] text-center ml-[50px]">
+             <form action="" class="flex flex-col w-[300px] text-center ml-[50px]" method="POST">
                 <h1 class="mt-8 mb-6 text-[24px] font-bold">Đăng nhập</h1>
-                <input type="text" placeholder="Tên đăng nhập" class="rounded-lg pl-2 h-[35px]"><br>
-                <input type="password" placeholder="Mật khẩu" class="rounded-lg pl-2 h-[35px]"><br>
-                <button class="bg-[#D73C3C] text-white text-[18px] w-[100px] h-[30px] rounded-[10px] mx-auto hover:bg-green-500">Đăng nhập</button>
+                <input type="text" name="email" placeholder="Tên đăng nhập" class="rounded-lg pl-2 h-[35px]"><br>
+                <input type="password" name="password" placeholder="Mật khẩu" class="rounded-lg pl-2 h-[35px]"><br>
+                <button class="bg-[#D73C3C] text-white text-[18px] w-[100px] h-[30px] rounded-[10px] mx-auto hover:bg-green-500" type="submit" name="btn_login">Đăng nhập</button>
                 <div class="text-white mt-2">
                   Bạn chưa có tài khoản? <a class="mr-4 text-blue-700 hover:underline hover:text-[#E52323]" href="">Đăng kí</a>
                 </div>

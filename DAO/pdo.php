@@ -62,4 +62,10 @@
             unset($connect);
         }
     }
+
+    function pdo_login($sql){
+        $connect = pdo_get_connect();
+        $Result = $connect->query($sql);
+        return $Result;
+    }
 ?>
