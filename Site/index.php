@@ -22,10 +22,6 @@
         $VIEW_NAME = 'trangchu.php';
     }
 
-    if(isset($_GET["btn_login"])){
-        $email = $_GET["email"];
-        $password = $_GET["password"];
-
     if(isset($_POST['btn_register'])){
         $fullname=$_POST['fullname'];
         $email = $_POST["email"];
@@ -47,18 +43,18 @@
 
         $Result = pdo_login($sql);
 
+        // var_dump($Result);
+        
         if($Result){
             if($email == $Result['email']){
                 $_SESSION['email'] = $email;
                 $VIEW_NAME = 'trangchu.php';
-                exit;
-            }else{
-                $VIEW_NAME = 'login.php';
             }
+        }else{
+            $VIEW_NAME = 'login.php';
         }
 
     }
 
-
-    include_once "./layout.php";
+  include_once "./layout.php";
 ?>
