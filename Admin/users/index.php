@@ -3,6 +3,15 @@
     require_once "../../DAO/users.php";
 
     if(isset($_GET['add'])){
+        $password = $_POST["password"];
+        $fullname = $_POST["fullname"];
+        $email = $_POST["email"];
+        $phone = $_POST["phone"];
+        $address = $_POST["address"];
+        $id_position = $_POST["id_position"];
+
+        user_insert($password,$fullname,$email,$phone,$address,$id_position);
+
         $VIEW_NAME = 'add.php';
     }else if(isset($_GET['update'])){
         $id = $_REQUEST['id'];
@@ -30,8 +39,14 @@
         $address = $_POST["address"];
         $id_position = $_POST["id_position"];
         $id = $_REQUEST['id'];
+
+        // var_dump($_REQUEST);
+        // die;
         
-        user_update($password,$fullname,$email,$phone,$address,$id_position,$id);
+        user_update($password,$fullname,$email,$phone,$address,$id);
+
+        // user_insert($password,$fullname,$email,$phone,$address,$id_position);
+
         
         $item = user_selectall();
         $VIEW_NAME = 'list.php';
