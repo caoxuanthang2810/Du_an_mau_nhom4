@@ -19,9 +19,9 @@
         pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id_position);
     }
 
-    function user_update($password,$fullname,$email,$phone,$address,$id){
-        $sql = "UPDATE users SET password = ?,fullname = ?,email = ?,phone = ?,address = ? WHERE id = ?";
-        pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id);
+    function user_update($password,$fullname,$email,$phone,$address,$id_position,$id){
+        $sql = "UPDATE users SET password = ?,fullname = ?,email = ?,phone = ?,address = ?,id_position = ? WHERE id = ?";
+        pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id_position,$id);
     }
 
     //Xóa khách hàng
