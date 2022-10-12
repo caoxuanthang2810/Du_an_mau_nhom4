@@ -1,4 +1,7 @@
 <?php
+
+use LDAP\Result;
+
     require_once "../DAO/pdo.php";
     require_once "../DAO/users.php";
 
@@ -20,13 +23,28 @@
         $VIEW_NAME = 'trangchu.php';
     }
 
-    if(isset($_POST["btn_login"])){
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+    if(isset($_GET["btn_login"])){
+        $email = $_GET["email"];
+        $password = $_GET["password"];
 
-        $items = user_login($email,$password);
+        // $items = user_login($email,$password);
 
-        var_dump($ỉtems);
+        // var_dump($ỉtems);
+
+        $sql = "SELECT * from users where email = '$email' AND password = '$password'";
+
+
+        $Result = pdo_login($sql);
+
+        if($Result){
+            if($email == $Result['email']){
+                $_SESSION['email'] = $email;
+                $VIEW_NAME = 'trangchu.php';
+                exit;
+            }else{
+                $VIEW_NAME = 'login.php';
+            }
+        }
 
     }
 

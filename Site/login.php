@@ -17,7 +17,7 @@
         <!-- <img src="../Asset/img/header/banner.jpg" alt="" srcset=""> -->
         <div class="container mx-auto mt-16 mb-16">
             <div class=" mx-auto bg-red-400 w-[400px] h-[350px] rounded-lg">
-             <form action="" class="flex flex-col w-[300px] text-center ml-[50px]" method="POST">
+             <form action="" class="flex flex-col w-[300px] text-center ml-[50px]" method="GET">
                 <h1 class="mt-8 mb-6 text-[24px] font-bold">Đăng nhập</h1>
                 <input type="text" name="email" placeholder="Tên đăng nhập" class="rounded-lg pl-2 h-[35px]"><br>
                 <input type="password" name="password" placeholder="Mật khẩu" class="rounded-lg pl-2 h-[35px]"><br>
