@@ -51,21 +51,27 @@
                                         <td>Sửa tài khoản</td>
                                         <td>Xóa tài khoản</td>
                                     </tr>
-                                    
-                                <tr>
-                                    <td>
-
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../categories/index.php?update&id=">Sửa</a>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../categories/index.php?remove&id=">Xóa</a>
-                                    </td>
-                                </tr>
+                                    <?php foreach($items as $key){
+                                            extract($key)
+                                    ?>
+                                    <tr>
+                                        <td>
+                                            <?=$id?>
+                                        </td>
+                                        <td>
+                                            <?=$name?>
+                                        </td>
+                                        <td>
+                                            <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../categories/index.php?update&id=<?=$id?>">Sửa</a>
+                                        </td>
+                                        <td>
+                                            <!-- <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../categories/index.php?remove&id=<?=$id?>">Xóa</a> -->
+                                            <a class="border border-[#000] p-2 bg-[#d62d20] text-white"  onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../categories/index.php?remove&id=<?=$id?>'}">Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                        }
+                                    ?>
                                 </table>
                             </div>
                         </div>

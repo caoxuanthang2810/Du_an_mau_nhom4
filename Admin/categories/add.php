@@ -11,10 +11,10 @@
     <h1 class="text-center text-[36px] font-bold mb-6 mt-4">Thêm danh mục</h1>
     <div class="flex items-center justify-center">
         <form action="" class="w-[600px] rounded-[10px] border border-[#000] p-4 shadow shadow-[#000]" method="POST" enctype="multipart/form-data">
-            <div class="">
+            <!-- <div class="">
                 <div class="font-bold mb-3 text-[18px]">Mã danh mục</div>
                 <input type="text" name="id" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
-            </div>
+            </div> -->
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Tên danh mục</div>

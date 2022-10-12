@@ -32,21 +32,18 @@
     }
 
     if(isset($_POST['btn_update'])){
+        $id = $_GET['id'];
         $password = $_POST["password"];
         $fullname = $_POST["fullname"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
         $address = $_POST["address"];
         $id_position = $_POST["id_position"];
-        $id = $_REQUEST['id'];
 
         // var_dump($_REQUEST);
         // die;
         
-        user_update($password,$fullname,$email,$phone,$address,$id);
-
-        // user_insert($password,$fullname,$email,$phone,$address,$id_position);
-
+        user_update($password,$fullname,$email,$phone,$address,$id_position,$id);
         
         $item = user_selectall();
         $VIEW_NAME = 'list.php';
