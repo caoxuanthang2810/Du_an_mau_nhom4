@@ -29,4 +29,9 @@
         $sql = "delete from users where id = ?";
         pdo_execute($sql, $id);
     }
+
+    function user_login($email,$password){
+        $sql = "SELECT * from users where email = ? AND password = ?";
+        return pdo_login($sql,$email,$password);
+    }
 ?>
