@@ -1,4 +1,6 @@
 <?php
+    require_once "../DAO/pdo.php";
+    require_once "../DAO/users.php";
 
     if(isset($_GET['danhmuc'])){
         $VIEW_NAME = 'danhmuc.php';
@@ -9,6 +11,7 @@
     }else if(isset($_GET['login'])){
         $VIEW_NAME = 'login.php';   
     }else if(isset($_GET['register'])){
+
         $VIEW_NAME = 'register.php';   
     }else if(isset($_GET['cart'])){
         $VIEW_NAME = 'giohang.php';   
@@ -17,5 +20,11 @@
     }
     include_once "./layout.php";
 
-
+    if(isset($_POST['btn_register'])){
+        $fullname=$_POST['fullname'];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        user_insert_register($password,$fullname,$email);
+        $VIEW_NAME = 'trangchu.php';
+    }
 ?>

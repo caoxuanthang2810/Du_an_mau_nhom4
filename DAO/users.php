@@ -18,7 +18,11 @@
         $sql = "INSERT INTO users(password,fullname,email,phone,address,id_position) VALUES(?,?,?,?,?,?)";
         pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id_position);
     }
-
+     //Thêm tài khoản
+     function user_insert_register($password,$fullname,$email){
+        $sql = "INSERT INTO users(password,fullname,email) VALUES(?,?,?)";
+        pdo_execute($sql,$password,$fullname,$email);
+    }
     function user_update($password,$fullname,$email,$phone,$address,$id_position,$id){
         $sql = "UPDATE users SET password = ?,fullname = ?,email = ?,phone = ?,address = ?,id_position = ? WHERE id = ?";
         pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id_position,$id);
