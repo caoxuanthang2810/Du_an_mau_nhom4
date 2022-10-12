@@ -65,7 +65,9 @@
 
     function pdo_login($sql){
         $connect = pdo_get_connect();
-        $Result = $connect->query($sql);
+        $stmt = $connect->prepare($sql);
+        $stmt -> execute();
+        $Result = $stmt -> fetch(PDO::FETCH_ASSOC);
         return $Result;
     }
 ?>
