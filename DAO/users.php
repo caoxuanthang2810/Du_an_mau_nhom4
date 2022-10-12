@@ -19,12 +19,10 @@
         pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id_position);
     }
 
-    function user_update($password,$fullname,$email,$phone,$address,$id_position,$id){
-        $sql = "UPDATE users SET password = ?,fullname = ?,email = ?,phone = ?,address = ?,id_position = 2 WHERE id = ?";
-        pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id_position,$id);
+    function user_update($password,$fullname,$email,$phone,$address,$id){
+        $sql = "UPDATE users SET password = ?,fullname = ?,email = ?,phone = ?,address = ? WHERE id = ?";
+        pdo_execute($sql,$password,$fullname,$email,$phone,$address,$id);
     }
-
-    
 
     //Xóa khách hàng
     function user_delete($id){
