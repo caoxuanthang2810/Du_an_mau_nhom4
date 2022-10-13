@@ -1,3 +1,6 @@
+<?php
+require_once "../../Admin/categories/index.php";
+?>
 <!DOCTYPE html>
 
 <html lang="en">
