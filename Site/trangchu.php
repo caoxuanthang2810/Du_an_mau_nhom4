@@ -29,19 +29,19 @@
             <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
               <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
-                <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
               </div>
               <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
-                <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                <a href="" class="text-2xl font-normal  hover:text-lime-500">Iphone 14 pro max</a>
               </div>
               <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
-                <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
               </div>
               <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="" >
-                <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
               </div>
             </div>
             <!-- banner2 -->
@@ -55,51 +55,51 @@
               <div class="mt-6 grid grid-cols-4 gap-4 ">
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-red-600 hover:text-lime-500 ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400 "><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>
                 <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
-                  <a href="" class="text-2xl font-normal ">Iphone 14 pro max</a>
+                  <a href="" class="text-2xl font-normal hover:text-lime-500  ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
-                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl"><span class="">Đặt hàng</span></div>
+                  <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-yellow-400 hover:bg-pink-400"><span class="">Đặt hàng</span></div>
                 </div>           
               </div>
             </div>
