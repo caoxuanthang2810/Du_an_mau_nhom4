@@ -49,11 +49,12 @@
             if($email == $Result['email']){
                 $_SESSION['email'] = $email;            
                 $VIEW_LOGIN = 'login-success.php';
-                echo("Đăng nhập thành công");
+                // echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';
             }
         }else{
             echo("Đăng nhập thất bại");
+            $VIEW_LOGIN = 'login-failed.php';
             $VIEW_NAME = 'login.php';
         }
 

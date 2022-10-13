@@ -51,11 +51,11 @@
             <div class="pt-1">
               <div class="text-[18px] text-white">
                 <?php 
-                  require_once "./index.php";
+                    include "./index.php";
 
                     if(isset($_SESSION["email"])){
                 ?>
-                    <main> <?php include_once $VIEW_LOGIN?> </main>
+                    <main> <?php include $VIEW_LOGIN?> </main>
                 <?php   
                     }else{
                       // $email = $_POST["email"];
