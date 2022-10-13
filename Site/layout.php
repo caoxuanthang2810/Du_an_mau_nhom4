@@ -51,28 +51,24 @@
             <div class="pt-1">
               <div class="text-[18px] text-white">
                 <?php 
+                  require_once "./index.php";
+
                     if(isset($_SESSION["email"])){
                 ?>
-                      <div class="pt-1">
-                        <div class="text-xs text-white">
-                          Tài khoản
-                        </div>
-                        <span class="text-sm text-white font-bold"><?php echo $_SESSION['email']?></span>
-                        <div class="font-bold">
-                          <a class="hover:text-red-600 hover:underline" href="./logout.php">Đăng xuất</a>
-                        </div>
-                      </div>
-                <?php
+                    <main> <?php include_once $VIEW_LOGIN?> </main>
+                <?php   
                     }else{
                       // $email = $_POST["email"];
                       // $password = $_POST["password"];
+                    ?>
+                      <ul class="flex mt-2 gap-1">  
+                        <li class="hover:text-black"><a href="./index.php?login">Đăng nhập</a></li>
+                        /
+                        <li class="hover:text-black"><a href="./index.php?register">Đăng kí</a></li>
+                      </ul>
+                    <?php
                     }
                 ?>
-                <ul class="flex mt-2 gap-1">  
-                  <li class="hover:text-black"><a href="./index.php?login">Đăng nhập</a></li>
-                  /
-                  <li class="hover:text-black"><a href="./index.php?register">Đăng kí</a></li>
-                </ul>
               </div>
             </div>
           </div>

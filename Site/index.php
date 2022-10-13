@@ -43,14 +43,17 @@
 
         $Result = pdo_login($sql);
 
-        // var_dump($Result);
-        
+        var_dump($Result);
+
         if($Result){
             if($email == $Result['email']){
-                $_SESSION['email'] = $email;
+                $_SESSION['email'] = $email;            
+                $VIEW_LOGIN = 'login-success.php';
+                echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';
             }
         }else{
+            echo("Đăng nhập thất bại");
             $VIEW_NAME = 'login.php';
         }
 
