@@ -54,9 +54,7 @@
                     include "./index.php";
 
                     if(isset($_SESSION["email"])){
-                        if (isset($_SESSION['email'])) {
                           include_once "login-success.php";
-                        }
                       ?>  
                 <?php   
                     }else{

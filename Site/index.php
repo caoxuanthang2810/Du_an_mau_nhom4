@@ -22,13 +22,13 @@
         $VIEW_NAME = 'trangchu.php';
     }
 
-    if(isset($_POST['btn_register'])){
-        $fullname=$_POST['fullname'];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-        user_insert_register($password,$fullname,$email);
-        $VIEW_NAME = 'trangchu.php';
-    }
+    // if(isset($_POST['btn_register'])){
+    //     $fullname=$_POST['fullname'];
+    //     $email = $_POST["email"];
+    //     $password = $_POST["password"];
+    //     user_insert_register($password,$fullname,$email);
+    //     $VIEW_NAME = 'login.php';
+    // }
 
     // $VIEW_LOGIN = 'login-failed.php';
     // pdo_get_connect();
@@ -50,14 +50,15 @@
 
         if($Result){
             if($email == $Result['email']){
-                $_SESSION['email'] = $email;            
+                $_SESSION['email'] = $email;
+                // $_SESSION['fullname'] = $fullname;      
                 $VIEW_LOGIN = 'login-success.php';
                 // echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';
             }
         }else{
-            echo("Đăng nhập thất bại");
-            // $VIEW_LOGIN = 'login-failed.php';
+            // echo("Đăng nhập thất bại");
+            $VIEW_LOGIN = 'login-failed.php';
             $VIEW_NAME = 'login.php';
         }
 
