@@ -31,7 +31,7 @@
         </div>
 
         <main>
-            <?php include_once $VIEW_NAME ?>
+            <?php include_once $VIEW_NAME?>
         </main>
     </body>
 </html>
