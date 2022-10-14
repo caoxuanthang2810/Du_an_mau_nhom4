@@ -1,5 +1,7 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
-
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -23,7 +25,7 @@
                     <div>
                         <ul class="flex flex-col-2 gap-7">
                             <li><a class="text-blue-600 font-bold hover:text-red-600 hover:underline" href="../../index.php">Trang chủ</a></li>
-                            <li><a class="font-bold hover:text-red-600 hover:underline" href="logout.php">Đăng xuất</a></li>
+                            <li><a class="font-bold hover:text-red-600 hover:underline" href="../../logout.php">Đăng xuất</a></li>
                         </ul>
                     </div>
                 </div>
