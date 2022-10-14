@@ -30,6 +30,9 @@
         $VIEW_NAME = 'trangchu.php';
     }
 
+    // $VIEW_LOGIN = 'login-failed.php';
+    // pdo_get_connect();
+
     if(isset($_POST["btn_login"])){
         $email = $_POST["email"];
         $password = $_POST["password"];
@@ -43,7 +46,7 @@
 
         $Result = pdo_login($sql);
 
-        var_dump($Result);
+        // var_dump($Result);
 
         if($Result){
             if($email == $Result['email']){
@@ -54,7 +57,7 @@
             }
         }else{
             echo("Đăng nhập thất bại");
-            $VIEW_LOGIN = 'login-failed.php';
+            // $VIEW_LOGIN = 'login-failed.php';
             $VIEW_NAME = 'login.php';
         }
 

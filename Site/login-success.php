@@ -9,14 +9,14 @@
 </head>
 <body>
 <div class="pt-1">
-  <div class="text-xs text-white">
+  <div class="text-[16px] text-white">
     Tài khoản
   </div>
   <span class="text-sm text-white font-bold">
     <?php echo $_SESSION['email']?>
   </span>
   <div class="font-bold">
-    <a class="hover:text-red-600 hover:underline" href="../logout.php">Đăng xuất</a>
+    <a class="hover:text-[#000] hover:underline" href="../logout.php">Đăng xuất</a>
   </div>
 </div>
 </body>

@@ -43,7 +43,7 @@
       </div>
 
       <div class="h-auto w-3/12 pl-3 relative md:block hidden">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-start">
           <div class="flex">
             <div class="pt-2 pr-2">
               <!-- <img class="w-8" src="./images." alt=""> -->
@@ -54,12 +54,12 @@
                     include "./index.php";
 
                     if(isset($_SESSION["email"])){
-                ?>
-                    <main> <?php include $VIEW_LOGIN?> </main>
+                        if (isset($_SESSION['email'])) {
+                          include_once "login-success.php";
+                        }
+                      ?>  
                 <?php   
                     }else{
-                      // $email = $_POST["email"];
-                      // $password = $_POST["password"];
                     ?>
                       <ul class="flex mt-2 gap-1">  
                         <li class="hover:text-black"><a href="./index.php?login">Đăng nhập</a></li>
