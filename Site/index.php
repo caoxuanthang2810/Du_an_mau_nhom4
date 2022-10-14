@@ -35,7 +35,9 @@
 
     if(isset($_POST["btn_login"])){
         $email = $_POST["email"];
-        $password = $_POST["password"];
+        $password = sha1($_POST["password"]);
+        // $password = $_POST["password"];
+
 
         // $items = user_login($email,$password);
 
@@ -55,6 +57,16 @@
                 $VIEW_LOGIN = 'login-success.php';
                 // echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';
+
+                foreach($Result as $row){
+                    if($row['id_position'] == "1"){
+                        header("location: ../Admin/index.php");
+                    }else if($row['id_position'] == "2"){
+                        header("location: ./layout.php");
+                    }else{
+                        header("Location:index.php");
+                    }
+                }
             }
         }else{
             // echo("Đăng nhập thất bại");

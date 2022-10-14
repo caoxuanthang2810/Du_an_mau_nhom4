@@ -60,8 +60,9 @@
     if(isset($_POST['btn_register'])){
       $fullname=$_POST['fullname'];
       $email = $_POST["email"];
-      $password = $_POST["password"];
-      user_insert_register($password,$fullname,$email);
+      $password = sha1($_POST["password"]);
+      $id_position = 2;
+      user_insert_register($password,$fullname,$email,$id_position);
       $VIEW_NAME = 'login.php';
   }
   ?>
