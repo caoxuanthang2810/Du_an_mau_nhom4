@@ -1,3 +1,7 @@
+<?php
+require_once "../../Admin/comments/index.php";
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -51,30 +55,35 @@
                                         <td>Sửa</td>
                                         <td>Xóa</td>
                                     </tr>
-                                    
+                                   <?php foreach($items as $item):?>
                                 <tr>
                                     <td>
+                                        <?=$item['id']?>
+                                    </td>
+                                    <td>
+                                    <?=$item['content']?>
                                         
                                     </td>
                                     <td>
+                                    <?=$item['time']?>
                                         
                                     </td>
                                     <td>
+                                    <?=$item['id_user']?>
                                         
                                     </td>
                                     <td>
-                                        
-                                    </td>
-                                    <td>
+                                    <?=$item['id_product']?>
 
                                     </td>
                                     <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../comments/index.php?update&id=">Sửa</a>
+                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../comments/index.php?update&id=<?=$item['id']?>">Sửa</a>
                                     </td>
                                     <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../comments/index.php?remove&id=">Xóa</a>
+                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../comments/index.php?remove&id=<?=$item['id']?>">Xóa</a>
                                     </td>
                                 </tr>
+                                <?php endforeach;?>
                                 </table>
                             </div>
                         </div>
