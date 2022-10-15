@@ -18,6 +18,8 @@
         $VIEW_NAME = 'register.php';   
     }else if(isset($_GET['cart'])){
         $VIEW_NAME = 'giohang.php';   
+    }else if(isset($_GET['detail'])){
+        $VIEW_NAME = 'detail.php';
     }else{
         $VIEW_NAME = 'trangchu.php';
     }
