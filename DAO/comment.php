@@ -1,5 +1,6 @@
 <?php
-    require_once "./global.php";
+    
+    
 
     // Gọi tất cả bảng
     function comment_selectall(){
