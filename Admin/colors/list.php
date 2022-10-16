@@ -1,7 +1,7 @@
 <?php
-require_once "../../Admin/comments/index.php";
-
+require_once "../../Admin/colors/index.php";
 ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -43,49 +43,41 @@ require_once "../../Admin/comments/index.php";
             <div class="grow">
                 <div class="w-full mx-auto">
                     <div class="">
-                        <div class="bg-[#525151] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách bình luận</div>
+                        <div class="bg-[#525151] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách màu sắc</div>
                         <div class="pb-[15px] border border-[#ccc] border-solid rounded-b-lg">
+                            <div class="flex justify-center h-[50px] items-center mt-3">
+                                <a class="border border-[#000] p-2 bg-[#000] text-white" href="../colors/index.php?add">Thêm màu sắc</a>
+                            </div>
                             
                             <div class="flex items-center justify-center mt-6">
                                 <table>
                                     <tr class="font-bold">
-                                        <td>Mã bình luận</td>
-                                        <td>Nội dung</td>
-                                        <td>Thời gian</td>
-                                        <td>Tên khách hàng</td>
-                                        <td>Sản phẩm</td>
-                                        <td>Sửa</td>
-                                        <td>Xóa</td>
+                                        <td>Mã danh mục</td>
+                                        <td>Tên danh mục</td>
+                                        <td>Sửa tài khoản</td>
+                                        <td>Xóa tài khoản</td>
                                     </tr>
-                                   <?php foreach($items as $item):?>
-                                <tr>
-                                    <td>
-                                        <?=$item['id']?>
-                                    </td>
-                                    <td>
-                                    <?=$item['content']?>
-                                        
-                                    </td>
-                                    <td>
-                                    <?=$item['time']?>
-                                        
-                                    </td>
-                                    <td>
-                                    <?=$item['id_user']?>
-                                        
-                                    </td>
-                                    <td>
-                                    <?=$item['id_product']?>
-
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../comments/index.php?update&id=<?=$item['id']?>">Sửa</a>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../comments/index.php?remove&id=<?=$item['id']?>">Xóa</a>
-                                    </td>
-                                </tr>
-                                <?php endforeach;?>
+                                    <?php foreach($items as $key){
+                                            extract($key)
+                                    ?>
+                                    <tr>
+                                        <td>
+                                            <?=$id?>
+                                        </td>
+                                        <td>
+                                            <?=$name?>
+                                        </td>
+                                        <td>
+                                            <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../colors/index.php?update&id=<?=$id?>">Sửa</a>
+                                        </td>
+                                        <td>
+                                            <!-- <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../categories/index.php?remove&id=<?=$id?>">Xóa</a> -->
+                                            <a class="border border-[#000] p-2 bg-[#d62d20] text-white"  onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../colors/index.php?remove&id=<?=$id?>'}">Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                        }
+                                    ?>
                                 </table>
                             </div>
                         </div>
