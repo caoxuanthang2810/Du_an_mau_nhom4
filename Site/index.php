@@ -38,7 +38,6 @@
     if(isset($_POST["btn_login"])){
         $email = $_POST["email"];
         $password = sha1($_POST["password"]);
-        // $password = $_POST["password"];
 
 
         // $items = user_login($email,$password);
@@ -54,8 +53,7 @@
 
         if($Result){
             if($email == $Result['email']){
-                $_SESSION['email'] = $email;
-                // $_SESSION['fullname'] = $fullname;      
+                $_SESSION['email'] = $email;   
                 $VIEW_LOGIN = 'login-success.php';
                 // echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';

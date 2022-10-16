@@ -26,7 +26,8 @@
               <h2 class="text-4xl text-red-700 font-bold mt-10">Sản phẩm hot</h2>
             </div>
             <!-- sản phẩm -->
-            <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
+
+            <!-- <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
               <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
                 <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
@@ -43,7 +44,8 @@
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="" >
                 <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
               </div>
-            </div>
+            </div> -->
+
             <!-- banner2 -->
             <div class="mt-6">
               <img class="h-[350px] w-[1980px]" src="../Asset/img/content/Banner2.jpg" alt="">
@@ -53,7 +55,7 @@
             <div class="mt-10 bg-gray-300 mb-3">
               
               <div class="mt-6 grid grid-cols-4 gap-4 ">
-                <div class="text-center">
+                <!-- <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
                   <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
@@ -100,7 +102,7 @@
                   <a href="" class="text-2xl font-normal hover:text-lime-500  ">Iphone 14 pro max</a>
                   <p class="text-xl text-red-500">45.000.00đ</p>
                   <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-slate-300 hover:bg-red-500"><span class="">Đặt hàng</span></div>
-                </div>           
+                </div>            -->
               </div>
             </div>
         </div>
