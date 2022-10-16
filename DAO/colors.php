@@ -15,13 +15,13 @@
 
     // Thêm mới màu
     function color_insert($name){
-        $sql = "INSERT INTO colors(name) VALUES(?)";
+        $sql = "INSERT INTO colors(name_color) VALUES(?)";
         pdo_execute($sql,$name);
     }
     
     // Update màu 
     function color_update($name,$id){
-        $sql = "UPDATE colors SET name = ? WHERE id = ?";
+        $sql = "UPDATE colors SET name_color = ? WHERE id = ?";
         pdo_execute($sql,$name,$id);
     }
 

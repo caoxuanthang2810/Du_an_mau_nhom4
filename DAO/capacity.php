@@ -15,13 +15,13 @@
 
     // Thêm mới dung lượng
     function capacity_insert($name){
-        $sql = "INSERT INTO capacity(name) VALUES(?)";
+        $sql = "INSERT INTO capacity(name_capacity) VALUES(?)";
         pdo_execute($sql,$name);
     }
     
     // Update dung lượng 
     function capacity_update($name,$id){
-        $sql = "UPDATE capacity SET name = ? WHERE id = ?";
+        $sql = "UPDATE capacity SET name_capacity = ? WHERE id = ?";
         pdo_execute($sql,$name,$id);
     }
 
