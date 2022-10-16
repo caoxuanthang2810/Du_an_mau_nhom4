@@ -1,5 +1,5 @@
 <?php
-    require_once "./global.php";
+    // require_once "./global.php";
 
     // Gọi tất cả bảng
     function capacity_selectall(){
