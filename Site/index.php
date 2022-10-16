@@ -20,6 +20,8 @@
         $VIEW_NAME = 'giohang.php';   
     }else if(isset($_GET['detail'])){
         $VIEW_NAME = 'detail.php';
+    }else if(isset($_GET['profile'])){
+        $VIEW_NAME = 'profile.php';   
     }else{
         $VIEW_NAME = 'trangchu.php';
     }
