@@ -65,7 +65,7 @@ require_once "../../Admin/colors/index.php";
                                             <?=$id?>
                                         </td>
                                         <td>
-                                            <?=$name?>
+                                            <?=$name_color?>
                                         </td>
                                         <td>
                                             <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../colors/index.php?update&id=<?=$id?>">Sửa</a>
