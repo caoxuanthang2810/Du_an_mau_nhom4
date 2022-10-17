@@ -2,7 +2,7 @@
     require_once "./index.php";
 
     session_start();
-
+    
     if(isset($_SESSION["email"]) && $_SESSION["email"] == "Admin@gmail.com"){
         header("location: ./dashboard/index.php");
     }else{
