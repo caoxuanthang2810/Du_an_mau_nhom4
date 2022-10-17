@@ -34,8 +34,7 @@
     <h1 class="text-neutral-500 border-b-2 border-black ">Danh mục :</h1>
 
     <div class=" flex justify-between ml-28 mr-28 pt-4 font-sans ">
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
-        <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp "class="w-52 h-52 m-auto pt-2 "  alt="">
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
         <div class=" pt-3">
 
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">iPhone </p>
@@ -43,16 +42,14 @@
 
       </div>
 
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="../Asset/img/content/teco.png" class="w-52 h-52 m-auto pt-2 "  alt="">
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2  bg-slate-50  rounded-2xl">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             OPPO </p>
         </div>
       </div>
 
-      <div class="  w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="../Asset/img/content/oppo-reno7-z-(2).jpg"  class="w-52 h-52 m-auto pt-2 " alt="">
+      <div class=" flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             NOKIA </p>
@@ -60,8 +57,7 @@
 
       </div>
 
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
-        <img src="../Asset/img/content/pocco.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             README </p>
@@ -69,13 +65,11 @@
 
       </div>
 
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
-        <img src="../Asset/img/content/a4.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             SAM SUNG </p>
         </div>
-
       </div>
 
 
@@ -90,8 +84,7 @@
 
 
     <div class=" flex justify-between ml-28 mr-28 pt-4 ">
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl   ">
-        <img src="../Asset/img/content/sony-xperia-5-plus-600x600-1-600x600.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl   ">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             SONY</p>
@@ -99,9 +92,7 @@
 
       </div>
 
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
-        <img src="../Asset/img/content/xiaomi-poco-c3-085320-015320-600x600.jpg"  class="w-52 h-52 m-auto pt-2 " alt="">
-
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             XIAOMI </p>
@@ -109,9 +100,7 @@
 
       </div>
 
-      <div class="  w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="../Asset/img/content/z3773077180047_97aae459f1c759744608f2fd7d0471c2.jpg"class="w-52 h-52 m-auto pt-2 " alt="">
-
+      <div class=" flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             TECNO</p>
@@ -119,9 +108,7 @@
 
       </div>
 
-      <div class=" w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="../Asset/img/content/Nubia-Z20-5.jpg" class="w-52 h-52 m-auto pt-2 " alt="">
-
+      <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             NUBIA </p>
@@ -129,20 +116,14 @@
 
       </div>
 
-      <div class="  w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
-        <img src="../Asset/img/content/vivo_v23_03.jpg " class="w-52 h-52 m-auto pt-2 " alt="">
+      <div class=" flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             VIVO</p>
         </div>
 
       </div>
-
-
-
     </div>
-
-
   </div>
 
   <div class="">

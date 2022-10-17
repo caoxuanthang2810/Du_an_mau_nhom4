@@ -21,6 +21,8 @@
     }else if(isset($_GET['detail'])){
         $VIEW_NAME = 'detail.php';
     }else if(isset($_GET['profile'])){
+        // $id = $_POST["id"];
+        $items = user_selectall(); 
         $VIEW_NAME = 'profile.php';   
     }else{
         $VIEW_NAME = 'trangchu.php';
@@ -55,7 +57,8 @@
 
         if($Result){
             if($email == $Result['email']){
-                $_SESSION['email'] = $email;   
+                $_SESSION['email'] = $email;
+                $_SESSION['id'] = $id;   
                 $VIEW_LOGIN = 'login-success.php';
                 // echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';

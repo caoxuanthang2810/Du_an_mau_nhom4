@@ -13,8 +13,9 @@
     Tài khoản
   </div>
   <span class="text-sm text-white font-bold">
+    <!-- <a class="hover:underline hover:text-[#000]" href="./index.php?profile"></a> -->
     <?php echo $_SESSION['email']?>
-  </span>
+    </span>
   <div class="font-bold">
     <a class="hover:text-[#000] hover:underline" href="../logout.php">Đăng xuất</a>
   </div>
