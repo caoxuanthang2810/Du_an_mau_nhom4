@@ -22,22 +22,22 @@
 
     <div class="pb-2 text-center">
       <i class="fa-solid fa-user text-[24px] mr-3"></i>
-        <input  type="text" id="name " placeholder="Ho-Tên :" class=" border-2 w-[1000px] h-12 rounded-lg hover:border-orange-400 border-2 pl-2"  >
+        <input  type="text" id="name" placeholder="Họ-Tên :" class=" border-2 w-[1000px] h-12 rounded-lg hover:border-orange-400 border-2 pl-2" disabled  >
 
     </div>
     <div class="pt-4 text-center">
       <i class="fa-solid fa-phone text-[24px] mr-3"></i>
-        <input  type="number" id="name " placeholder="Số điện thoại :"  class=" border-2 w-[1000px] h-12 rounded-lg hover:border-orange-400 border-2 pl-2" >
+        <input  type="number" id="name " placeholder="Số điện thoại :"  class=" border-2 w-[1000px] h-12 rounded-lg hover:border-orange-400 border-2 pl-2" disabled >
 
     </div>
     <div class="pt-4 text-center ">
       <i class="fa-solid fa-envelope text-[24px] mr-3"></i>
-        <input   type=" email" id="name " placeholder="Email :" class="w-[1000px] h-12 rounded-lg hover:border-orange-400 border-2 pl-2" >
+        <input   type=" email" id="name " placeholder="Email :" class="w-[1000px] h-12 rounded-lg hover:border-orange-400 border-2 pl-2" disabled >
 
     </div>
     <div class="pt-4 pb-4 text-center">
       <i class="fa-solid fa-location-dot text-[24px] mr-3"></i>
-        <input  type="text" id="name " placeholder="Địa chỉ :" class=" border-2 w-[1000px] h-20 rounded-lg hover:border-orange-400 border-2 pl-2" >
+        <input  type="text" id="name " placeholder="Địa chỉ :" class=" border-2 w-[1000px] h-20 rounded-lg hover:border-orange-400 border-2 pl-2" disabled >
 
     </div>
     <div class="text-center pb-4">
