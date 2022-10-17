@@ -44,6 +44,10 @@
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Tên chức vụ</div>
                 <input type="text" name="id_position" value="<?=$id_position?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
+                <!-- <select name="id_position" id="">
+                    <option value="1">Admin</option>
+                    <option value="2">User</option>
+                </select> -->
             </div>
 
             <div class="pt-5 flex justify-center">
