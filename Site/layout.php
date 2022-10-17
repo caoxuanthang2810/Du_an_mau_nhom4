@@ -90,7 +90,7 @@
         <li class="hover:text-black hover:underline"><a href="./index.php">Trang chủ</a></li>
         <li class="hover:text-black hover:underline"><a href="./index.php?danhmuc">Sản phẩm</a></li>
         <li class="hover:text-black hover:underline"><a href="./index.php?gioithieu">Giới thiệu</a></li>
-        <li class="hover:text-black hover:underline"><a href="./index.php?profile">Hỏi đáp</a></li>
+        <li class="hover:text-black hover:underline"><a href="./index.php?hoidap">Hỏi đáp</a></li>
       </ul>
     </div>
   </div>

@@ -245,7 +245,7 @@
             <form class="flex justify-center mt-3" method="POST">
                 <?php
                     include "./index.php";
-                    if ($_SESSION['email']) {
+                    if (isset($_SESSION['email'])) {
                 ?>
                     <input type="text" placeholder="Bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]">
                 <?php
