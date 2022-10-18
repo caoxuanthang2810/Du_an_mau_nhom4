@@ -1,3 +1,6 @@
+<?php
+require_once "../../Admin/capacity/index.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,19 +45,18 @@
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại Màu</div>
-                <select name="id_color" id="">
+                <select name="color" id="">
                     <option value="">Xanh</option>
-                    <option value="">Đỏ</option>
-                    <option value="">Tím</option>
-                    <option value="">Vàng</option>
+                   
                 </select>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Dung lượng</div>
-                <select name="id_capacity" id="">
-                    <option value="">128GB</option>
-                </select>
+               
+                <section name="capacity">
+                    <option><?= $items['name'] ?></option>
+                </section>
             </div>
 
             <div class="pt-5">

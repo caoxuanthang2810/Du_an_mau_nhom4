@@ -1,3 +1,9 @@
+<?php
+require_once "../../Admin/products/index.php";
+
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -53,29 +59,47 @@
                                         <td>Giá tiền</td>
                                         <td>Ảnh sản phẩm</td>
                                         <td>Nội dung</td>
-                                        <td>Số trang</td>
+                                        <td>Trạng thái</td>
+                                        <td>Màu</td>
+                                        <td>Dung lượng</td>
+                                        <td>hãng điện thoại</td>
                                         <td>Sửa</td>
                                         <td>Xóa</td>
                                     </tr>
+                                    <?php 
+                                    foreach($items_product as $key){
+                                        extract($key)
                                     
+                                    ?>
                                 <tr>
                                     <td>
-                                        
+                                        <?=$key['id_product']  ?>
                                     </td>
                                     <td>
-                                        
+                                        <?= $key['name']?>
                                     </td>
                                     <td>
-                                        
+                                        <?= $price ?>
                                     </td>
                                     <td>
-                                        <img src="" alt="Ảnh bị lỗi hoặc chưa có" style="width:100px; height: 100px">
+                                        <img  style="width:100px; height: 100px"src="../../Asset/img/products/<?php echo $value['avatar'];?>">
                                     </td>
                                     <td>
-                                        
+                                        <?= $detail?>
                                     </td>
                                     <td>
-
+                                        <?= $bit_active;?>
+                                    </td>
+                             
+                                    <td>
+                                        <?= $key['name_color'];?>
+                                    </td>
+                                 
+                                    <td>
+                                        <?= $capacity['name'];?>
+                                    </td>
+                                    <td>
+                                        <?= $id_categories['id'];?>
                                     </td>
                                     <td>
                                         <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=">Sửa</a>
@@ -83,7 +107,13 @@
                                     <td>
                                         <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../products/index.php?remove&id=">Xóa</a>
                                     </td>
+                                
+                                
                                 </tr>
+                                <?php
+                            }
+                            ?>
+                                
                                 </table>
                             </div>
                         </div>
