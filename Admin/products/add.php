@@ -1,5 +1,5 @@
 <?php
-require_once "../../Admin/capacity/index.php";
+require_once "../../Admin/products/index.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,7 +1,6 @@
 <?php
 require_once "../../Admin/products/index.php";
 
-
 ?>
 
 <!DOCTYPE html>
@@ -83,6 +82,9 @@ require_once "../../Admin/products/index.php";
                                     </td>
                                     <td>
                                         <img  style="width:100px; height: 100px"src="../../Asset/img/products/<?=$key['image_file'];?>">
+                                        <?php 
+                                            // var_dump($key["image_file"]);
+                                        ?>
                                     </td>
                                     <td>
                                         <?= $detail?>
@@ -102,10 +104,10 @@ require_once "../../Admin/products/index.php";
                                         <?= $key['id_categories'];?>
                                     </td>
                                     <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=">Sửa</a>
+                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=<?=$id?>">Sửa</a>
                                     </td>
                                     <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../products/index.php?remove&id=">Xóa</a>
+                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../products/index.php?remove&id=<?=$id?>">Xóa</a>
                                     </td>
                                 
                                 

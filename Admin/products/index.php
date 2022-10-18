@@ -21,6 +21,7 @@
         $items_product = product_selectall();
         $VIEW_NAME = 'list.php';
     }
+
     if (isset($_FILES['image_file'])){
         $target_dir = '../../Asset/img/products/';
         $image = $_FILES['image']['name'];
@@ -37,6 +38,7 @@
             move_uploaded_file($_FILES['image']['tmp_name'],$target_file);
         }
     }
+    
     if(isset($_POST['btn_insert'])){
         $name = $_POST["name"];
         $price = $_POST['price'];
