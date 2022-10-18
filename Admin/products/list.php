@@ -73,7 +73,7 @@ require_once "../../Admin/products/index.php";
                                     ?>
                                 <tr>
                                     <td>
-                                        <?=$key['id_product']  ?>
+                                        <?=$key['id']?>
                                     </td>
                                     <td>
                                         <?= $key['name']?>
@@ -82,7 +82,7 @@ require_once "../../Admin/products/index.php";
                                         <?= $price ?>
                                     </td>
                                     <td>
-                                        <img  style="width:100px; height: 100px"src="../../Asset/img/products/<?php echo $value['avatar'];?>">
+                                        <img  style="width:100px; height: 100px"src="../../Asset/img/products/<?=$key['image_file'];?>">
                                     </td>
                                     <td>
                                         <?= $detail?>
@@ -92,14 +92,14 @@ require_once "../../Admin/products/index.php";
                                     </td>
                              
                                     <td>
-                                        <?= $key['name_color'];?>
+                                        <?= $key['color'];?>
                                     </td>
                                  
                                     <td>
-                                        <?= $capacity['name'];?>
+                                        <?= $key['capacity'];?>
                                     </td>
                                     <td>
-                                        <?= $id_categories['id'];?>
+                                        <?= $key['id_categories'];?>
                                     </td>
                                     <td>
                                         <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=">Sửa</a>

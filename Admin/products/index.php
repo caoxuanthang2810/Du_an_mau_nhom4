@@ -3,6 +3,7 @@
     require_once "../../DAO/product.php";
     require_once "../../DAO/capacity.php";
     require_once '../../DAO/product_color_detail.php';
+
     if(isset($_GET['add'])){
         $VIEW_NAME = 'add.php';
     }else if(isset($_GET['update'])){
@@ -17,11 +18,10 @@
         header("location:../products/index.php");
         die;
     }else{
-        
-        $items = product_selectall();
+        $items_product = product_selectall();
         $VIEW_NAME = 'list.php';
     }
-    if (isset($_FILES['image'])){
+    if (isset($_FILES['image_file'])){
         $target_dir = '../../Asset/img/products/';
         $image = $_FILES['image']['name'];
         $target_file = $target_dir.$image;// điểm đầu
@@ -38,7 +38,6 @@
         }
     }
     if(isset($_POST['btn_insert'])){
-        
         $name = $_POST["name"];
         $price = $_POST['price'];
         $detail = $_POST['detail'];
@@ -67,6 +66,7 @@
         // $items_product = product_color();
         $VIEW_NAME = 'list.php';
     }
+
     if(isset($_POST['capacity'])){
         $name = $_POST["name"];
         $id = $_GET["id"];
