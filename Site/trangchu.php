@@ -33,8 +33,8 @@ require_once "./index.php";
             
               <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
                 <?php foreach($item as $items):?>
-                  <a href="./index.php?detail"> <div class="text-center">
-               <img class="w-full h-[300px]" src="<?=$items['image_file']?>" alt="">
+                <a href="./index.php?detail&id=<?=$items['id']?>"> <div class="text-center">
+                  <img class="w-full h-[300px]" src="<?=$items['image_file']?>" alt="">
                 <div class="text-2xl font-normal hover:text-lime-500 "><?=$items['name']?></div>
                 <div class="text-red-500 font-bold">
                 <?=$items['price']?>
@@ -67,7 +67,7 @@ require_once "./index.php";
               <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
                 <?php foreach($pro as $items):?>
               <div class="text-center">
-                <a href="#"><img class="w-full h-[300px]" src="<?=$items['image_file']?>" alt=""></a>
+                <a href="./index.php?detail&id=<?=$items['id']?>"><img class="w-full h-[300px]" src="<?=$items['image_file']?>" alt=""></a>
                 <a href="" class="text-2xl font-normal hover:text-lime-500 "><?=$items['name']?></a>
                 <div class="text-red-500 font-bold">
                 <?=$items['price']?>
