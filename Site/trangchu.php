@@ -1,3 +1,7 @@
+<?php
+require_once "./index.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,13 +30,18 @@
               <h2 class="text-4xl text-red-700 font-bold mt-10">Sản phẩm hot</h2>
             </div>
             <!-- sản phẩm -->
+            
+              <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
+                <?php foreach($item as $items):?>
+                  <a href="./index.php?detail"> <div class="text-center">
+               <img class="w-full h-[300px]" src="<?=$items['image_file']?>" alt="">
+                <div class="text-2xl font-normal hover:text-lime-500 "><?=$items['name']?></div>
+                <div class="text-red-500 font-bold">
+                <?=$items['price']?>
+                </div>
 
-            <!-- <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
-              <div class="text-center">
-                <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
-                <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
-              </div>
-              <div class="text-center">
+               </div></a>
+              <!-- <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
                 <a href="" class="text-2xl font-normal  hover:text-lime-500">Iphone 14 pro max</a>
               </div>
@@ -43,8 +52,9 @@
               <div class="text-center">
                 <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="" >
                 <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
-              </div>
-            </div> -->
+              </div> -->
+              <?php endforeach;?>
+            </div>
 
             <!-- banner2 -->
             <div class="mt-6">
@@ -54,7 +64,14 @@
             <h1 class="text-4xl text-red-700 font-bold mt-5">Sản phẩm bán chạy</h1>
             <div class="mt-10 bg-gray-300 mb-3">
               
-              <div class="mt-6 grid grid-cols-4 gap-4 ">
+              <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
+                <?php foreach($pro as $items):?>
+              <div class="text-center">
+                <a href="#"><img class="w-full h-[300px]" src="<?=$items['image_file']?>" alt=""></a>
+                <a href="" class="text-2xl font-normal hover:text-lime-500 "><?=$items['name']?></a>
+                <div class="text-red-500 font-bold">
+                <?=$items['price']?>
+                </div>
                 <!-- <div class="text-center">
                   <img src="../Asset/img/content/Ip14.jpg" alt="">
                   <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
@@ -104,6 +121,7 @@
                   <div class="mt-5 w-[100px] h-[50px] bg-green-400 text-center font-bold  ml-[130px] flex justify-center items-center rounded-xl hover:text-slate-300 hover:bg-red-500"><span class="">Đặt hàng</span></div>
                 </div>            -->
               </div>
+              <?php endforeach;?>
             </div>
         </div>
     </div>

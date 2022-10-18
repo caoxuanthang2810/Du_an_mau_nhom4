@@ -12,7 +12,13 @@
         $sql = "SELECT * from products where id=?";
         return pdo_query_one($sql,$id);
     }
-
+    // lay san pham theo danh muc
+    
+       // phan trang
+       function get_product_top(){
+          $sql = "SELECT * FROM products ORDER BY id LIMIT 0, 4";
+          return pdo_query($sql);
+       }
     // Thêm mới danh mục
     function product_insert($name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories){
         $sql = "INSERT INTO products (name,image,price,detail,bit_active,color,capacity,id_categories) VALUES(?,?,?,?,?,?,?,?)";

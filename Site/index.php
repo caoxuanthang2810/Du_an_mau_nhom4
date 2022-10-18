@@ -2,7 +2,10 @@
 
     require_once "../DAO/pdo.php";
     require_once "../DAO/users.php";
-
+    require_once "../DAO/product.php";
+    
+    $item = get_product_top();
+    $pro = product_selectall();
 
     if(isset($_GET['danhmuc'])){
         $VIEW_NAME = 'danhmuc.php';
@@ -50,7 +53,7 @@
 
 
         $Result = pdo_login($sql);
-
+              
         // var_dump($Result);
 
         if($Result){
