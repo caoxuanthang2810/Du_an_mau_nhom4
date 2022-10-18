@@ -30,11 +30,12 @@
         $sql = "DELETE FROM products WHERE id=?";
         pdo_execute($sql,$id);
     }
-    // function product_color(){
-    //     $sql = "Select products.name,products.image,products.price, products.detail,products.bit_active, capacity.name_capacity, colors.name_color,products.id_categories
-    //     from ((products
-    //     INNER JOIN colors on capacity.id_capacity = products.id_capacity)
-    //     INNER JOIN colors on colors.id_color = product.id_color)";
-    //     return pdo_query($sql);
-    // }
+    function product_color(){
+        $sql = "Select products.name,products.image,products.price, products.detail,products.bit_active, capacity.name_capacity, colors.name_color,products.id_categories
+        from ((products
+        INNER JOIN colors on capacity.id_capacity = products.id_capacity)
+        INNER JOIN colors on colors.id_color = product.id_color)";
+        return pdo_query($sql);
+    }
+   
 ?>
