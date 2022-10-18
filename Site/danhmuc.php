@@ -152,64 +152,20 @@
   </div>
   <!--điện thoại-->
   <div class=" flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto ">
+    <?php
+    $danh_sach_sp = product_selectall(); 
+    foreach ($danh_sach_sp as $key => $pro){
+    ?>
+
     <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto   hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">SAM SUNG A-20</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold">21.000.000</h5>
+      <img src="../Asset/img/content/<?php echo $pro["image_file"] ?>" class="pt-4 m-auto   hover:scale-75" alt="">
+      <p class="text-xl font-semibold pt-3"><?php echo $pro["name"] ?></p>
+      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?php echo $pro["price"] ?></h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75 " alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-  </div>
-
-  <div class=" flex justify-between h-4/5 bg-red-400 pt-8 pb-8  max-w-screen-2xl m-auto">
-    <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75 " alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl ">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp " class="pt-4  pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
+    <?php
+    }
+     ?>
   </div>
 </body>
 
