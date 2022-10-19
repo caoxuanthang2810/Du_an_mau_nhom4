@@ -71,11 +71,11 @@ require_once "../../Admin/comments/index.php";
                                         
                                     </td>
                                     <td>
-                                    <?=$item['id_user']?>
+                                    <?=$item['fullname']?>
                                         
                                     </td>
                                     <td>
-                                    <?=$item['id_product']?>
+                                    <?=$item['name']?>
 
                                     </td>
                                     <td>

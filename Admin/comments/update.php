@@ -30,13 +30,13 @@ require_once "./index.php";
             </div>
 
             <div class="pt-5 ">
-                <div class="font-bold mb-3 text-[18px]">Tên khách hàng</div>
+                <div class="font-bold mb-3 text-[18px]">id khách hàng</div>
                 <input type="text" name="id_product" class="border pl-2 border-[#000] h-[40px] w-[50%] rounded-[10px]" value="<?=$id_user?>" disabled>
                 <!-- <textarea name="detail" id="" class="border pl-2 border-[#000] h-[100px] w-[50%] rounded-[10px]"></textarea> -->
             </div>
 
             <div class="pt-5 ">
-                <div class="font-bold mb-3 text-[18px]">Tên sản phẩm</div>
+                <div class="font-bold mb-3 text-[18px]">id sản phẩm</div>
                 <input type="text" name="id_user" class="border pl-2 border-[#000] h-[40px] w-[50%] rounded-[10px]" value="<?=$id_product?>" disabled>
                 <!-- <textarea name="detail" id="" class="border pl-2 border-[#000] h-[100px] w-[50%] rounded-[10px]"></textarea> -->
             </div>

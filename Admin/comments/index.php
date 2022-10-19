@@ -16,6 +16,7 @@
     require_once "../../DAO/pdo.php";
     require_once "../../DAO/comment.php";
 
+
     if(isset($_GET['update'])){
         $id = $_REQUEST['id'];
         $comment_info = comment_select_id($id);
@@ -28,7 +29,7 @@
         header("location:../comments/index.php");
         die;
     }else{
-        $items = comment_selectall();
+        $items = comment_select();
         $VIEW_NAME = 'list.php';
     }
 
@@ -54,7 +55,7 @@
 
         comment_update($content,$time,$id_product,$id_user,$id);
 
-        $items = comment_selectall();
+        $items = comment_select();
         $VIEW_NAME = 'list.php';
     }
 
