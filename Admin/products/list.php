@@ -43,7 +43,7 @@
             </div>
         </div>
 
-<<<<<<< Updated upstream
+
             <div class="grow">
                 <div class="w-full mx-auto">
                     <div class="">
@@ -114,82 +114,8 @@
                                     </td>
                                 
                                 
-=======
-        <div class="grow">
-            <div class="w-full mx-auto">
-                <div class="">
-                    <div class="bg-[#525151] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách sản phẩm</div>
-                    <div class="pb-[15px] border border-[#ccc] border-solid rounded-b-lg">
-                        <div class="flex justify-center h-[50px] items-center mt-3">
-                            <a class="border border-[#000] p-2 bg-[#000] text-white" href="../products/index.php?add">Thêm sản phẩm</a>
-                        </div>
 
-                        <div class="flex items-center justify-center mt-6">
-                            <table>
-                                <tr class="font-bold">
-                                    <td>Mã sản phẩm</td>
-                                    <td>Tên sản phẩm</td>
-                                    <td>Giá tiền</td>
-                                    <td>Ảnh sản phẩm</td>
-                                    <td>Nội dung</td>
-                                    <td>Trạng thái</td>
-                                    <td>Màu</td>
-                                    <td>Dung lượng</td>
-                                    <td>hãng điện thoại</td>
-                                    <td>Sửa</td>
-                                    <td>Xóa</td>
->>>>>>> Stashed changes
-                                </tr>
-                                <?php
-                                foreach ($product_color as $key) {
-                                    extract($key)
-
-                                ?>
-                                    <tr>
-                                        <td>
-                                            <?= $key['id'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $key['name'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $price ?>
-                                        </td>
-                                        <td>
-                                            <img style="width:100px; height: 100px" src="../../Asset/img/products/<?= $key['image_file']; ?>">
-                                        </td>
-                                        <td>
-                                            <?= $detail ?>
-                                        </td>
-                                        <td>
-                                            <?= $bit_active; ?>
-                                        </td>
-
-                                        <td>
-                                        <?= $key['name_color'] ?>
-                                            
-                                            
-                                               
-                                        </td>
-
-                                        <td>
-                                            <?php foreach ($product_capacity as $capacity) : ?>
-                                                <?= $capacity['name_capacity'] ?>
-                                            <?php endforeach ?>
-                                        </td>
-                                        <td>
-                                            <?= $key['id_categories']; ?>
-                                        </td>
-                                        <td>
-                                            <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=">Sửa</a>
-                                        </td>
-                                        <td>
-                                            <button class="border border-[#000] p-2 bg-[#d62d20] text-white"  onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../products/index.php?remove&id=<?=$id?>'}">Xóa</button>
-                                        </td>
-
-
-                                    </tr>
-
+        \
 
                                 <?php
                                 }
