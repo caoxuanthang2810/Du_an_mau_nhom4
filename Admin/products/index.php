@@ -2,7 +2,7 @@
     require_once "../../DAO/pdo.php";
     require_once "../../DAO/product.php";
     require_once "../../DAO/capacity.php";
-    require_once '../../DAO/product_color_detail.php';
+    
 
     if(isset($_GET['add'])){
         $VIEW_NAME = 'add.php';
@@ -10,7 +10,7 @@
         $id = $_REQUEST['id'];
         $product_info = product_select_id($id);
         extract($product_info);
-
+        
         $VIEW_NAME = 'update.php';
     }else if(isset($_GET['remove'])){
         $id = $_REQUEST['id'];
@@ -18,10 +18,27 @@
         header("location:../products/index.php");
         die;
     }else{
-        $items_product = product_selectall();
+        
+        $items = product_selectall();
+        
+        $product_color = product_color();
+        $product_capacity = product_capacity();
+
+       
+        
         $VIEW_NAME = 'list.php';
     }
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
     if (isset($_FILES['image_file'])){
         $target_dir = '../../Asset/img/products/';
         $image = $_FILES['image']['name'];
@@ -38,7 +55,18 @@
             move_uploaded_file($_FILES['image']['tmp_name'],$target_file);
         }
     }
+<<<<<<< Updated upstream
     
+=======
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
     if(isset($_POST['btn_insert'])){
         $name = $_POST["name"];
         $price = $_POST['price'];
@@ -69,14 +97,6 @@
         $VIEW_NAME = 'list.php';
     }
 
-    if(isset($_POST['capacity'])){
-        $name = $_POST["name"];
-        $id = $_GET["id"];
-
-        capacity_update($name,$id);
-
-        $items1 = capacity_selectall();
-        $VIEW_NAME = 'list.php';
-    }
+    
     include_once "../layout.php";
 ?>
