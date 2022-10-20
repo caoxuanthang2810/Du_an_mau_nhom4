@@ -13,7 +13,14 @@
         $sql = "SELECT * from comments where id=?";
         return pdo_query_one($sql,$id);
     }
-
+    // lấy dữ liệu của bảng users, products, comments
+    function comment_select(){
+        $sql = "SELECT users.fullname,comments.id,comments.content, comments.time, comments.id_product, comments.id_user, products.name from comments 
+        INNER JOIN users on users.id = comments.id_user
+        INNER JOIN products on products.id = comments.id_product";
+        return pdo_query($sql);
+    }
+    
     // Thêm mới Bình luận
     function comment_insert($content,$time,$id_product,$id_user){
         $sql = "INSERT INTO comments(content,time,id_product,id_user) VALUES(?,?,?,?)";

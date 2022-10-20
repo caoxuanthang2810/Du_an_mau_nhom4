@@ -7,7 +7,7 @@
         return pdo_query($sql);
     }
 
-    // Gọi hàm đơn hàng theo id
+    // Gọi hàm khách hàng theo id
     function user_select_id($id){
         $sql = "SELECT * from users where id=?";
         return pdo_query_one($sql,$id);
