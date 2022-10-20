@@ -93,7 +93,7 @@
                                         <?= $detail?>
                                     </td>
                                     <td>
-                                        <?= $bit_active;?>
+                                        <?=($bit_active==1)?"Còn Hàng" : "Hết hàng";?>
                                     </td>
                              
                                     <td>
