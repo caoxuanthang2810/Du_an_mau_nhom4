@@ -1,5 +1,5 @@
 <?php
-
+    
 
 ?>
 
@@ -69,7 +69,7 @@
                                         <td>Xóa</td>
                                     </tr>
                                     <?php 
-                                    foreach($items_product as $key){
+                                    foreach($product_color as $key){
                                         extract($key)
                                     
                                     ?>
@@ -97,7 +97,7 @@
                                     </td>
                              
                                     <td>
-                                        <?= $key['color'];?>
+                                        <?= $key['name_color'];?>
                                     </td>
                                  
                                     <td>

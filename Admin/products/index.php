@@ -29,16 +29,8 @@
         $VIEW_NAME = 'list.php';
     }
 
-<<<<<<< Updated upstream
-=======
 
 
-
-
-
-
-
->>>>>>> Stashed changes
     if (isset($_FILES['image_file'])){
         $target_dir = '../../Asset/img/products/';
         $image = $_FILES['image']['name'];
@@ -55,18 +47,8 @@
             move_uploaded_file($_FILES['image']['tmp_name'],$target_file);
         }
     }
-<<<<<<< Updated upstream
+
     
-=======
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
     if(isset($_POST['btn_insert'])){
         $name = $_POST["name"];
         $price = $_POST['price'];
