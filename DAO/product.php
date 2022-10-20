@@ -37,11 +37,38 @@
         pdo_execute($sql,$id);
     }
     function product_color(){
-        $sql = "Select products.name,products.image,products.price, products.detail,products.bit_active, capacity.name_capacity, colors.name_color,products.id_categories
-        from ((products
-        INNER JOIN colors on capacity.id_capacity = products.id_capacity)
-        INNER JOIN colors on colors.id_color = product.id_color)";
+        $sql = "SELECT colors.name_color ,colors.id,
+                products.id,image_file,price,bit_active,id_categories,products.name,products.detail,
+                color_detail.id_color,color_detail.id_product
+        FROM colors
+        JOIN color_detail on colors.id = color_detail.id_color
+        JOIN products on products.id = color_detail.id_product 
+        
+        ";
+        return pdo_query($sql);
+
+        
+    }
+    function product_capacity(){
+        $sql = "SELECT capacity.name_capacity ,capacity.id,
+                products.id,image_file,price,bit_active,id_categories,
+                capacity_detail.id_capacity,capacity_detail.id_product
+        FROM capacity
+        JOIN capacity_detail on capacity.id = capacity_detail.id_capacity
+        JOIN products on products.id = capacity_detail.id_product 
+        
+        ";
         return pdo_query($sql);
     }
-   
+    function product_color_detail($id){
+        $sql = "select 
+                        pcx.id_product,
+                        pcx.id_color , 
+                        c.name_color as color_name
+                    from color_detail pcx
+                    join colors c
+                        on pcx.id_color = c.id
+                    where pcx.id_product = $id";
+        return pdo_query($sql);
+    }
 ?>
