@@ -13,12 +13,12 @@
         <form action="" class="w-[600px] rounded-[10px] border border-[#000] p-4 shadow shadow-[#000]" method="POST" enctype="multipart/form-data">
             <div class="">
                 <div class="font-bold mb-3 text-[18px]">Tên sản phẩm</div>
-                <input type="text" name="name" value="<?= $name?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="name" value="<?=$name?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Ảnh sản phẩm</div>
-                <input type="file" name="image" value="<?= $image_file?>" >
+                <input type="file" name="image" value="<?=$image?>" >
             </div>
 
             <div class="pt-5">
@@ -34,35 +34,22 @@
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Trạng thái</div>
-                <select name="bit_active" id="">
-                    <option value="1">Còn hàng</option>
-                    <option value="2">Đã hết hàng</option>
-                </select>
+                <input name="bit_active" value="<?=$bit_active?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại Màu</div>
-                <select name="id_color" id="">
-                    <option value="">Xanh</option>
-                    <option value="">Đỏ</option>
-                    <option value="">Tím</option>
-                    <option value="">Vàng</option>
-                </select>
+                <input name="color" value="<?=$color?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Dung lượng</div>
-                <select name="id_capacity" id="">
-                    <option value="">128GB</option>
-                </select>
+                <input name="capacity" value="<?=$capacity?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại điện thoại</div>
-                <select name="id_categories" id="">
-                    <option value="">SamSung</option>
-                    <option value="">Iphone</option>
-                </select>
+                <input name="id_categories" value="<?=$id_categories?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
             </div>
 
             <div class="pt-5 flex justify-center">

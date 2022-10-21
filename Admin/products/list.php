@@ -69,22 +69,22 @@
                                         <td>Xóa</td>
                                     </tr>
                                     <?php 
-                                    foreach($product_color as $key){
-                                        extract($key)
+                                    foreach($items as $item){
+                                        extract($item)
                                     
                                     ?>
                                 <tr>
                                     <td>
-                                        <?=$key['id']?>
+                                        <?=$item['id']?>
                                     </td>
                                     <td>
-                                        <?= $key['name']?>
+                                        <?= $item['name']?>
                                     </td>
                                     <td>
-                                        <?= $price ?>
+                                        <?=$price?>
                                     </td>
                                     <td>
-                                        <img  style="width:100px; height: 100px"src="../../Asset/img/products/<?=$key['image_file'];?>">
+                                        <img  style="width:100px; height: 100px"src="<?=$item['image'];?>">
                                         <?php 
                                             // var_dump($key["image_file"]);
                                         ?>
@@ -97,16 +97,14 @@
                                     </td>
                              
                                     <td>
-                                        <?= $key['name_color'];?>
+                                        <?= $item['color'];?>
                                     </td>
                                  
                                     <td>
-                                        <?php foreach($product_capacity as $capacity) {?>
-                                        <p value = "<?= $capacity['id_product']?>"></p><?= $capacity['name_capacity'];?>
-                                        <?php }?>
+                                        <?= $item['capacity'];?>
                                     </td>
                                     <td>
-                                        <?= $key['id_categories'];?>
+                                        <?= $item['id_categories'];?>
                                     </td>
                                     <td>
                                         <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=<?=$id?>">Sửa</a>
@@ -114,11 +112,6 @@
                                     <td>
                                         <a class="border border-[#000] p-2 bg-[#d62d20] text-white" onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../products/index.php?remove&id=<?=$id?>'}">Xóa</a>
                                     </td>
-                                
-                                
-
-        \
-
                                 <?php
                                 }
                                 ?>
@@ -130,5 +123,4 @@
         </div>
     </div>
 </body>
-
 </html>

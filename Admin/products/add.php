@@ -23,7 +23,7 @@ require_once "../../Admin/products/index.php";
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Ảnh sản phẩm</div>
-                <input type="file" name="image_file">
+                <input type="file" name="image">
             </div>
 
             <div class="pt-5">
@@ -39,38 +39,22 @@ require_once "../../Admin/products/index.php";
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Trạng thái</div>
-                <select name="bit_active" id="">
-                    <option value="">Còn hàng</option>
-                    <option value="">Đã hết hàng</option>
-                </select>
+                <input type="number" name="bit_active" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại Màu</div>
-                <select name="color" id="">
-                    <option value="">Đỏ</option>
-
-                </select>
+                <input type="number" name="color" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Dung lượng</div>
-
-                <section name="capacity">
-                    <?php foreach ($product_capacity as $capacity) { ?>
-                        <?php echo $capacity['name_capacity'];?>
-                        
-                    <?php } ?>
-
-                </section>
+                <input type="number" name="capacity" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại điện thoại</div>
-                <select name="id_categories" id="">
-                    <option value="">SamSung</option>
-                    <option value="">Iphone</option>
-                </select>
+                <input type="number" name="id_categories" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5 flex justify-center">
