@@ -38,4 +38,6 @@
         $sql = "DELETE FROM comments WHERE id=?";
         pdo_execute($sql,$id);
     }
+    
+    
 ?>

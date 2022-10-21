@@ -58,6 +58,7 @@
         $items = comment_select();
         $VIEW_NAME = 'list.php';
     }
+    
 
     include_once "../layout.php";
 ?>
