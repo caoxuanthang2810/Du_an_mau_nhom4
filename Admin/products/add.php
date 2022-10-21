@@ -3,6 +3,7 @@ require_once "../../Admin/products/index.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@ require_once "../../Admin/products/index.php";
     <title>Form Thêm Mới Sản Phẩm</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <h1 class="text-center text-[36px] font-bold mb-6 mt-4">Thêm sản phẩm</h1>
     <div class="flex items-center justify-center">
@@ -21,7 +23,7 @@ require_once "../../Admin/products/index.php";
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Ảnh sản phẩm</div>
-                <input type="file" name="image">
+                <input type="file" name="image_file">
             </div>
 
             <div class="pt-5">
@@ -46,16 +48,20 @@ require_once "../../Admin/products/index.php";
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại Màu</div>
                 <select name="color" id="">
-                    <option value="">Xanh</option>
-                   
+                    <option value="">Đỏ</option>
+
                 </select>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Dung lượng</div>
-               
+
                 <section name="capacity">
-                    <option><?= $items['name'] ?></option>
+                    <?php foreach ($product_capacity as $capacity) { ?>
+                        <?php echo $capacity['name_capacity'];?>
+                        
+                    <?php } ?>
+
                 </section>
             </div>
 
@@ -73,4 +79,5 @@ require_once "../../Admin/products/index.php";
         </form>
     </div>
 </body>
+
 </html>

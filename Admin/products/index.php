@@ -6,6 +6,7 @@
 
     if(isset($_GET['add'])){
         $VIEW_NAME = 'add.php';
+        $product_capacity = product_capacity();
     }else if(isset($_GET['update'])){
         $id = $_REQUEST['id'];
         $product_info = product_select_id($id);
@@ -31,22 +32,9 @@
 
 
 
-    if (isset($_FILES['image_file'])){
-        $target_dir = '../../Asset/img/products/';
-        $image = $_FILES['image']['name'];
-        $target_file = $target_dir.$image;// điểm đầu
-        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-        $allowUpload = true;
-        $allowtype = ['jpg','png','jpeg','gif'];// những kiểu đuôi file đc chấp nhận
-
-        if(!in_array($imageFileType,$allowtype)){// in_array : kiểm tra $imageFileType có nằm trong mảng $allowtype hay k
-            echo "File không được định dạng";
-            $allowUpload = true;
-        }
-        if ($allowUpload == true){
-            move_uploaded_file($_FILES['image']['tmp_name'],$target_file);
-        }
-    }
+    
+   
+    
 
     
     if(isset($_POST['btn_insert'])){
@@ -57,8 +45,41 @@
         $capacity = $_POST['capacity'];
         $id_categories = $_POST['id_categories'];
         $bit_active = $_POST['bit_active'];
+
+        if (isset($_FILES['image_file'])){
+        
+            $error = [];
+    
+            $target_dir = '../../Asset/img/products/';
+            $name = $_FILES['image_file']['name'];
+            $target_file = $target_dir . $name;
+            $allowUpload = true;
+            $allowtype = ['jpg', 'png', 'jpeg', 'gif'];
+            $maxfilesize = 2000000;// kích cỡ lớn nhất mà file có thể upload (đơn vị bytes)
+            // lấy phần mở rộng của file (tức là đuuôi file sau dấu chấm)
+            $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
+            if (!in_array($imageFileType, $allowtype)) {// in_array : kiểm tra $imageFileType có nằm trong mảng $allowtype hay k
+                $error['img_type'] = "File không được định dạng";
+                $allowUpload = false;
+            }
+            // kiểm tra kích thước file không vượt qua giới hạn cho phép
+    
+            if ($_FILES['image_file']['size'] > $maxfilesize) {
+                echo " File không vượt quá " . $maxfilesize . "(Bytes)";
+                $allowUpload = false;
+            }
+            // up loadfile
+            if ($allowUpload == true) {
+                move_uploaded_file($_FILES['image_file']['tmp_name'], $target_file);
+            }
+    
+        }
+
+
         product_insert($name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories);
 
+
+        
         // $items_product = product_color();
         $VIEW_NAME = 'list.php';
     }
@@ -73,6 +94,7 @@
         $id_categories = $_POST['categories'];
         $bit_active = $_POST['bit_active'];
 
+        
         product_update($id,$name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories);
 
         // $items_product = product_color();

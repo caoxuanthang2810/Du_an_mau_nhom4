@@ -101,7 +101,9 @@
                                     </td>
                                  
                                     <td>
-                                        <?= $key['capacity'];?>
+                                        <?php foreach($product_capacity as $capacity) {?>
+                                        <p value = "<?= $capacity['id_product']?>"></p><?= $capacity['name_capacity'];?>
+                                        <?php }?>
                                     </td>
                                     <td>
                                         <?= $key['id_categories'];?>
@@ -110,7 +112,7 @@
                                         <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=<?=$id?>">Sửa</a>
                                     </td>
                                     <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../products/index.php?remove&id=<?=$id?>">Xóa</a>
+                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../products/index.php?remove&id=<?=$id?>'}">Xóa</a>
                                     </td>
                                 
                                 
