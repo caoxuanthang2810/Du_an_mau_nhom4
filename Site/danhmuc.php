@@ -15,11 +15,12 @@
 </head>
 <style>
 
-
 </style>
+
 
 <body>
   <!-- Content -->
+ 
 
   <div class="mt-2">
 
@@ -36,7 +37,7 @@
     <div class=" flex justify-between ml-28 mr-28 pt-4 font-sans ">
       <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
         <div class=" pt-3">
-
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/7/638007285202545738_iphone-14-pro-max-dd-bh.jpg"class="w-52 h-52 m-auto pt-2 pb-4"  alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">iPhone </p>
         </div>
 
@@ -44,6 +45,7 @@
 
       <div class="flex items-center justify-center w-60 h-60  hover:border-2  bg-slate-50  rounded-2xl">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/5/638005775325309503_oppo-reno8-4g-dd-moi.jpg" class="w-52 h-52 m-auto pt-2 pb-4"  alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             OPPO </p>
         </div>
@@ -51,6 +53,7 @@
 
       <div class=" flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/12/637538183203070135_nokia-c20-dd.jpg"  class="w-52 h-52 m-auto pt-2 pb-4"  alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             NOKIA </p>
         </div>
@@ -59,6 +62,7 @@
 
       <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/16/637989168060527478_realme-c30s-dd.jpg" class="w-52 h-52 m-auto pt-2 pb-4"  alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             README </p>
         </div>
@@ -67,6 +71,7 @@
 
       <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl">
         <div class="pt-2">
+          <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/5/638005761889410456_samsung-galaxy-s22-dd-tragop.jpg" class="w-52 h-52 m-auto pt-2 pb-4"  alt=""  >
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             SAM SUNG </p>
         </div>
@@ -86,6 +91,7 @@
     <div class=" flex justify-between ml-28 mr-28 pt-4 ">
       <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl   ">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/3/2/637187680777890913_sony-xperia-1-ii-dd.png" class="w-52 h-52 m-auto pt-2 pb-4"  alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             SONY</p>
         </div>
@@ -94,6 +100,7 @@
 
       <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl  ">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/5/638005799937393515_redmi-note-11-pro-4g-dd-bh.jpg"class="w-52 h-52 m-auto pt-2 pb-4" alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             XIAOMI </p>
         </div>
@@ -102,6 +109,7 @@
 
       <div class=" flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/5/638005857815843653_tecno-pop-5-dd-bh.jpg" class="w-52 h-52 m-auto pt-2 pb-4" alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             TECNO</p>
         </div>
@@ -110,6 +118,7 @@
 
       <div class="flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/20/637545269822106918_zte-nubia-red-magic-6-dd.jpg"class="w-52 h-52 m-auto pt-2 pb-4"  alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black">
             NUBIA </p>
         </div>
@@ -117,7 +126,9 @@
       </div>
 
       <div class=" flex items-center justify-center w-60 h-60  hover:border-2   bg-slate-50  rounded-2xl ">
+      
         <div class="pt-2">
+          <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/14/637987654083012579_vivo-v25e-vang-dd.jpg"  class="w-52 h-52 m-auto pt-2 pb-4" alt="">
           <p class="m-auto text-center text-xl  font-bold  text-2xl font-bold w-28  rounded-md h-10 bg-yellow-100  border-2 border-black ">
             VIVO</p>
         </div>
@@ -132,65 +143,28 @@
 
   </div>
   <!--điện thoại-->
-  <div class=" flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto ">
+   <!--điện thoại-->
+   <div class="  flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto pb-4">
+    <?php
+    /*
+    $danh_sach_sp = product_selectall(); 
+    foreach ($danh_sach_sp as $key ){
+    */
+    $danh_sach_sp = get_product_top();
+      foreach ($danh_sach_sp as $key ){
+
+ 
+    ?>
+
     <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto   hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">SAM SUNG A-20</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold">21.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
+      <img src="<?=$key ["image_file"] ?>" class="pt-4 m-auto   hover:scale-75" alt="">
+      <p class="text-xl font-semibold pt-3"><?=$key["name"] ?></p>
+      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?=$key["price"] ?></h5>
+      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl ">Đặt mua</button>
     </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75 " alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-  </div>
-
-  <div class=" flex justify-between h-4/5 bg-red-400 pt-8 pb-8  max-w-screen-2xl m-auto">
-    <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75 " alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl ">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp " class="pt-4  pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
+    <?php
+    }
+     ?>
   </div>
 </body>
 

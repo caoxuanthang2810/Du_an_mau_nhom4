@@ -3,7 +3,7 @@
 
     // Gọi tất cả bảng
     function product_selectall(){
-        $sql = "SELECT * from products";
+        $sql = "SELECT * from products ";
         return pdo_query($sql);
     }
 
