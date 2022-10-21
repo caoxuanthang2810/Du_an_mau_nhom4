@@ -11,6 +11,8 @@
     <h1 class="text-center text-[36px] font-bold mb-6 mt-4">Cập nhật sản phẩm</h1>
     <div class="flex items-center justify-center">
         <form action="" class="w-[600px] rounded-[10px] border border-[#000] p-4 shadow shadow-[#000]" method="POST" enctype="multipart/form-data">
+            <!-- dua vao id -->
+        
             <div class="">
                 <div class="font-bold mb-3 text-[18px]">Tên sản phẩm</div>
                 <input type="text" name="name" value="<?=$name?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">

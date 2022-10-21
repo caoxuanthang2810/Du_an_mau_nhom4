@@ -27,7 +27,7 @@
     
     // Update Danh mục 
     function product_update($id,$name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories){
-        $sql = "UPDATE products SET name = ?,image = ?,price = ?,detail = ?,bit_active = ?,color = ?, capacity = ?,id_categories WHERE id = ?";
+        $sql = "UPDATE products SET name = ?,image = ?,price = ?,detail = ?,bit_active = ?,color = ?, capacity = ?,id_categories = ? WHERE id = ?";
         pdo_execute($sql,$id,$name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories);
     }
 
