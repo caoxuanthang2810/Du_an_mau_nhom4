@@ -18,7 +18,7 @@
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Tên danh mục</div>
-                <input type="text" name="name" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
+                <input type="text" name="name_cate" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
             <div class="pt-5 flex justify-center">

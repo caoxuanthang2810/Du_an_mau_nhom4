@@ -22,7 +22,7 @@
 
     if(isset($_POST['btn_insert'])){
 
-        $name = $_POST["name"];
+        $name = $_POST["name_cate"];
         category_insert($name);
 
         $items = category_selectall();
@@ -30,7 +30,7 @@
     }
     
     if(isset($_POST['btn_update'])){
-        $name = $_POST["name"];
+        $name = $_POST["name_cate"];
         $id = $_GET["id"];
 
         category_update($name,$id);
