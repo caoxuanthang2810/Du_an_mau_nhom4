@@ -15,13 +15,13 @@
 
     // Thêm mới danh mục
     function category_insert($name){
-        $sql = "INSERT INTO categories(name) VALUES(?)";
+        $sql = "INSERT INTO categories(name_cate) VALUES(?)";
         pdo_execute($sql,$name);
     }
     
     // Update Danh mục 
     function category_update($name,$id){
-        $sql = "UPDATE categories SET name = ? WHERE id = ?";
+        $sql = "UPDATE categories SET name_cate = ? WHERE id = ?";
         pdo_execute($sql,$name,$id);
     }
 
