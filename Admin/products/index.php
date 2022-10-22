@@ -19,7 +19,11 @@
         die;
     }else{
         
-        $items = product_selectall();
+        // $items = product_selectall();
+
+        $items = product_select_all_innerjoin();
+
+        // var_dump($items);
         
         // $product_color = product_color();
         // $product_capacity = product_capacity();
@@ -70,7 +74,10 @@
 
 
         
-        $items = product_selectall();
+        // $items = product_selectall();
+
+        $items = product_select_all_innerjoin();
+
         $VIEW_NAME = 'list.php';
     }
     
@@ -88,7 +95,10 @@
         
         product_update($id,$name,$price,$detail,$bit_active,$color,$capacity,$id_categories);
 
-        $items = product_selectall();
+        // $items = product_selectall();
+
+        $items = product_select_all_innerjoin();
+
         
         $VIEW_NAME = 'list.php';
     }

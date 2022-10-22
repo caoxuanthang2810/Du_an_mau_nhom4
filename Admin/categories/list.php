@@ -64,7 +64,7 @@ require_once "../../Admin/categories/index.php";
                                             <?=$id?>
                                         </td>
                                         <td>
-                                            <?=$name?>
+                                            <?=$name_cate?>
                                         </td>
                                         <td>
                                             <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../categories/index.php?update&id=<?=$id?>">Sửa</a>

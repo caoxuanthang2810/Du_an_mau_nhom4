@@ -98,14 +98,14 @@
                              
                                     <td>
                                        
-                                        <?= $item['color'];?>
+                                        <?= $item['name_color'];?>
                                     </td>
                                  
                                     <td>
-                                        <?= $item['capacity'];?>
+                                        <?= $item['name_capacity'];?>
                                     </td>
                                     <td>
-                                        <?= $item['id_categories'];?>
+                                        <?= $item['name_cate'];?>
                                     </td>
                                     <td>
                                         <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=<?=$id?>">Sửa</a>
