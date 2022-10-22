@@ -3,6 +3,7 @@
     require_once "../DAO/pdo.php";
     require_once "../DAO/users.php";
     require_once "../DAO/product.php";
+    require_once "../DAO/comment.php";
     
     $item = get_product_top();
     $pro = product_selectall();
@@ -22,6 +23,11 @@
     }else if(isset($_GET['cart'])){
         $VIEW_NAME = 'giohang.php';   
     }else if(isset($_GET['detail'])){
+        $id = $_REQUEST['id'];
+
+        $product_detail = product_select_all_innerjoin_id($id);
+        extract($product_detail);
+
         $VIEW_NAME = 'detail.php';
     }else if(isset($_GET['profile'])){
         // $id = $_POST["id"];
@@ -83,6 +89,16 @@
         }
 
     }
+
+    // if(isset($_POST["btn_comment"])){
+    //     $id_product = $_REQUEST['id'];
+    //     $content = $_POST['content'];
+
+    //     $id_user = $_SESSION['email'];
+    //     $time = getdate();
+
+    //     comment_insert($content,$time,$id_product,$id_user);
+    // }
 
   include_once "./layout.php";
 ?>

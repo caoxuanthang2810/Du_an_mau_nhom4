@@ -20,10 +20,11 @@
       <!-- id="buy-book" -->
       <div class="grow">
         <!-- Sản phẩm -->
+          
         <div class="flex mt-[48px]">
           <div class="mr-6">
             <div class="w-[300px]">
-              <img class="w-full h-full" src="../Asset/img/content/Picture2.png" alt="Ảnh bị lỗi hoặc chưa có">
+              <img class="w-full h-full" src="<?=$image?>" alt="Ảnh bị lỗi hoặc chưa có">
             </div>
 
             <div class="flex mt-6">
@@ -43,14 +44,14 @@
             <div>
               <div class="flex">
                 <span>
-                  <!-- Tác giả: <?php echo $result["name_author"]?>        -->
-                  Hãng điện thoại : SamSung
+                  Hãng điện thoại : <?=$name_cate?>
                 </span>
               </div>
 
               <h1 class="text-[32px]">
                 <!-- <?php echo $result["name_product"]?> -->
-                SamSung Galaxy A10s
+                <!-- SamSung Galaxy A10s -->
+                <?=$name?>
               </h1>
             </div>
             <!-- Body -->
@@ -61,12 +62,13 @@
                   <div class="flex items-center justify-evenly bg-[#FAFAFA] w-[500px]">
                     <del class="text-[16px] text-[#bbb]">
                       <!-- <?php echo $result["price_product"]?> vnđ -->
-                      17.000.000 vnđ
+                      <!-- 17.000.000 vnđ -->
+                      <?=$price?> vnđ
                     </del>
 
                     <div class="text-[32px] text-[#E52323]">
                       <!-- <?php echo $result["price_product"]?> vnđ -->
-                      15.000.000 vnđ
+                      <?=$price?> vnđ
                     </div>
 
                     <div class="ml-3 text-white bg-[#E52323] px-2">
@@ -104,7 +106,7 @@
                   </div>
 
                   <div class="flex flex-col mt-4">
-                    <div class="flex">
+                    <!-- <div class="flex">
                       <p>Số Lượng</p>
 
                       <div class="flex ml-8">
@@ -117,7 +119,7 @@
                           <img class="p-1" src="../Asset/img/footer/Cong.png" alt="">
                         </button>
                       </div>
-                    </div>
+                    </div> -->
 
                     <div class="flex min-w-[190px] max-w-[300px] w-[300px] mt-8 justify-between items-center gap-5">
                       <div class="">
@@ -138,50 +140,7 @@
 
         <div class="mt-6">
           <div class="text-[24px] mb-4">MÔ TẢ SẢN PHẨM</div>
-          <p>Thông số kỹ thuật:
-
-            Chip: Snapdragon Qualcomm 870 5G
-
-            Qualcomm Kryo 585 8 lõi lên đến 3.2GHz.
-
-            Qualcomm Adreno 650 GPU
-
-            Modem X55 cho kết nối 5G nhanh như chớp
-
-            RAM: 6GB/8GB
-
-            ROM: 128GB/256GB
-
-            Dung lượng pin: 4,520 mAH - Sạc nhanh 33W
-
-            Màn hình E4 AMOLED 6.67" - Tần số quét 120Hz - Tần số lấy mẫu cảm ứng 360Hz
-
-            Kính Corning Gorrilla Glass 5
-
-            Bộ 3 Camera sau: 48MP + 8MP + 5MP
-
-            Camera trước 20MP.
-
-            Loa kép Dolby Atmos
-
-            Cảm biến vân tay bên
-
-            Mở khóa bằng khuôn mặt AI
-
-            GPS: L1 + L5
-
-            Galileo: E1 + E5a | KÍNH CƯỜNG LỰC: G1 | Beidou: B1I + B2a | Navic
-
-            Hệ điều hành: MIUI 12 dành cho POCO
-            Mô tả chi tiết:
-            Điện thoại POCO F3 đã có mặt tại Xiaomi Official Store - Gian hàng chính thức Xiaomi Việt Nam.
-            ✔ Sở hữu sức mạnh “vô đối” với chip Qualcomm Snapdragon 870, Xiaomi POCO F3 mang đến người dùng cơ hội trải
-            nghiệm hiệu năng của flagship hàng đầu trong mức giá tầm trung, một “món hời” mà các tín đồ “hệ gaming”
-            không thể nào bỏ qua
-            ✔ Màn hình AMOLED E4
-            POCO F3 hiển thị mọi thứ sống động rực rỡ với màn hình AMOLED, vật liệu E4 cao cấp mang đến màu sắc chính
-            xác tuyệt vời, hỗ trợ HDR 10+ giúp tăng chất lượng hiển thị lên cao nhất, cho phép cường độ sáng được đẩy
-            lên tối đa nhưng lại tiết kiệm đến 15% dung lượng pin..</p>
+          <p><?=$detail?></p>
         </div>
 
         <div class="block mt-6">
@@ -247,7 +206,7 @@
                     include "./index.php";
                     if (isset($_SESSION['email'])) {
                 ?>
-                    <input type="text" placeholder="Bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]">
+                    <input type="text" name="content" placeholder="Bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]">
                 <?php
                     }else{
                 ?>
@@ -256,7 +215,7 @@
                     }
                 ?>
                 
-                <button class="bg-[#FFB800] w-[100px] h-[50px] ml-6 rounded-[25px]">Gứi</button>
+                <button class="bg-[#FFB800] w-[100px] h-[50px] ml-6 rounded-[25px]" name="btn_comment">Gứi</button>
             </form>
           </div>
 
