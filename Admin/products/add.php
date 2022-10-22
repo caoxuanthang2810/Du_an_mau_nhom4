@@ -3,6 +3,7 @@ require_once "../../Admin/products/index.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@ require_once "../../Admin/products/index.php";
     <title>Form Thêm Mới Sản Phẩm</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <h1 class="text-center text-[36px] font-bold mb-6 mt-4">Thêm sản phẩm</h1>
     <div class="flex items-center justify-center">
@@ -37,34 +39,22 @@ require_once "../../Admin/products/index.php";
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Trạng thái</div>
-                <select name="bit_active" id="">
-                    <option value="">Còn hàng</option>
-                    <option value="">Đã hết hàng</option>
-                </select>
+                <input type="number" name="bit_active" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại Màu</div>
-                <select name="color" id="">
-                    <option value="">Xanh</option>
-                   
-                </select>
+                <input type="number" name="color" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Dung lượng</div>
-               
-                <section name="capacity">
-                    <option><?= $items['name'] ?></option>
-                </section>
+                <input type="number" name="capacity" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại điện thoại</div>
-                <select name="id_categories" id="">
-                    <option value="">SamSung</option>
-                    <option value="">Iphone</option>
-                </select>
+                <input type="number" name="id_categories" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5 flex justify-center">
@@ -73,4 +63,5 @@ require_once "../../Admin/products/index.php";
         </form>
     </div>
 </body>
+
 </html>
