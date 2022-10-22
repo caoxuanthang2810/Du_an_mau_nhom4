@@ -10,7 +10,7 @@
         $id = $_REQUEST['id'];
         $product_info = product_select_id($id);
         extract($product_info);
-        
+        $item = product_selectall();
         $VIEW_NAME = 'update.php';
     }else if(isset($_GET['remove'])){
         $id = $_REQUEST['id'];
@@ -85,37 +85,11 @@
         $id_categories = $_POST['id_categories'];
         $bit_active = $_POST['bit_active'];
 
-        if (isset($_FILES['image'])){
         
-            $error = [];
-    
-            $target_dir = '../../Asset/img/products/';
-            $image = $_FILES['image']['name'];
-            $target_file = $target_dir . $image;
-            $allowUpload = true;
-            $allowtype = ['jpg', 'png', 'jpeg', 'gif'];
-            $maxfilesize = 2000000;// kích cỡ lớn nhất mà file có thể upload (đơn vị bytes)
-            // lấy phần mở rộng của file (tức là đuuôi file sau dấu chấm)
-            $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
-            if (!in_array($imageFileType, $allowtype)) {// in_array : kiểm tra $imageFileType có nằm trong mảng $allowtype hay k
-                $error['img_type'] = "File không được định dạng";
-                $allowUpload = false;
-            }
-            // kiểm tra kích thước file không vượt qua giới hạn cho phép
-    
-            if ($_FILES['image']['size'] > $maxfilesize) {
-                echo " File không vượt quá " . $maxfilesize . "(Bytes)";
-                $allowUpload = false;
-            }
-            // up loadfile
-            if ($allowUpload == true) {
-                move_uploaded_file($_FILES['image']['tmp_name'], $target_file);
-            }
-    
-        }   
-        product_update($id,$name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories);
+        product_update($id,$name,$price,$detail,$bit_active,$color,$capacity,$id_categories);
 
         $items = product_selectall();
+        
         $VIEW_NAME = 'list.php';
     }
 

@@ -97,6 +97,7 @@
                                     </td>
                              
                                     <td>
+                                       
                                         <?= $item['color'];?>
                                     </td>
                                  
@@ -110,7 +111,7 @@
                                         <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../products/index.php?update&id=<?=$id?>">Sửa</a>
                                     </td>
                                     <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../products/index.php?remove&id=<?=$id?>'}">Xóa</a>
+                                        <button class="border border-[#000] p-2 bg-[#d62d20] text-white" onclick="if(confirm('Bạn cóa chắc là mún xóa hăm? UwU')){location.href='../products/index.php?remove&id=<?=$id?>'}">Xóa</button>
                                     </td>
                                 <?php
                                 }

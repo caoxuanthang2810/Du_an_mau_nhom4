@@ -26,9 +26,9 @@
     }
     
     // Update Danh mục 
-    function product_update($id,$name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories){
-        $sql = "UPDATE products SET name = ?,image = ?,price = ?,detail = ?,bit_active = ?,color = ?, capacity = ?,id_categories = ? WHERE id = ?";
-        pdo_execute($sql,$id,$name,$image,$price,$detail,$bit_active,$color,$capacity,$id_categories);
+    function product_update($id,$name,$price,$detail,$bit_active,$color,$capacity,$id_categories){
+        $sql = "UPDATE products SET name = ?,price = ?,detail = ?,bit_active = ?,color = ?, capacity = ?,id_categories = ? WHERE id = ?";
+        pdo_execute($sql,$id,$name,$price,$detail,$bit_active,$color,$capacity,$id_categories);
     }
 
     // Xóa danh mục
@@ -36,6 +36,9 @@
         $sql = "DELETE FROM products WHERE id=?";
         pdo_execute($sql,$id);
     }
+
+
+    
     // function product_color(){
     //     $sql = "SELECT colors.name_color ,colors.id,
     //             products.id,image_file,price,bit_active,id_categories,products.name,products.detail,

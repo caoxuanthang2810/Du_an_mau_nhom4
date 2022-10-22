@@ -18,10 +18,7 @@
                 <input type="text" name="name" value="<?=$name?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
-            <div class="pt-5">
-                <div class="font-bold mb-3 text-[18px]">Ảnh sản phẩm</div>
-                <input type="file" name="image" value="<?=$image?>" >
-            </div>
+           
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Giá sản phẩm</div>
