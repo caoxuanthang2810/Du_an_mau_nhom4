@@ -21,6 +21,16 @@
         $sql = "SELECT * from products where id=?";
         return pdo_query_one($sql,$id);
     }
+
+    function product_select_all_innerjoin_id($id){
+        $sql = "SELECT p.id,p.name,p.image,p.price,p.detail,p.bit_active,clr.name_color,cap.name_capacity, cate.name_cate
+        from products p
+        inner join colors clr on clr.id = p.color
+        inner join capacity cap on cap.id = p.capacity
+        inner join categories cate on cate.id = p.id_categories
+        where p.id = $id";
+        return pdo_query_one($sql,$id);
+    }
     // lay san pham theo danh muc
     
        // phan trang
