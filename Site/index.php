@@ -7,6 +7,11 @@
     $item = get_product_top();
     $pro = product_selectall();
 
+    // Session cũng là một cách để lưu thông tin của người dùng để sử dụng trên nhiều trang. 
+    // Session khác với Cookies ở chỗ, session được lưu ở máy chủ thay vì lưu ở máy người dùng. 
+    // Do đó, ngay khi thoát trình duyệt, session sẽ bị mất.
+
+
     if(isset($_GET['danhmuc'])){
         $VIEW_NAME = 'danhmuc.php';
     }else if(isset($_GET['gioithieu'])){
