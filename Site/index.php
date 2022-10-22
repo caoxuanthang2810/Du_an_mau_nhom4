@@ -12,6 +12,13 @@
     // Do đó, ngay khi thoát trình duyệt, session sẽ bị mất.
 
 
+    // sự giống nhau và khác nhau giữa require và include
+    // - sự giống nhau: require và include đều dùng để import file php khác vào file php đang chạy
+    // - sự khác nhau: 
+    // + require: import file khác, nếu import lỗi => các câu lệnh bên dưới sẽ dừng
+    // + include: import file khác, nếu import lỗi => các câu lệnh bên dưới vẫn chạy
+
+
     if(isset($_GET['danhmuc'])){
         $VIEW_NAME = 'danhmuc.php';
     }else if(isset($_GET['gioithieu'])){

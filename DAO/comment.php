@@ -1,7 +1,5 @@
 <?php
     
-    
-
     // Gọi tất cả bảng
     function comment_selectall(){
         $sql = "SELECT * from comments";

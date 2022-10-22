@@ -1,4 +1,5 @@
 <?php
+// khai báo session
     session_start();
 ?>
 <!DOCTYPE html>
