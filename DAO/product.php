@@ -31,6 +31,13 @@
         where p.id = $id";
         return pdo_query_one($sql,$id);
     }
+
+    function product_select_all_innerjoin_cate($id_categories){
+        $sql = "SELECT *
+        from products
+        where id_categories = $id_categories";
+        return pdo_query_one($sql,$id_categories);
+    }
     // lay san pham theo danh muc
     
        // phan trang
