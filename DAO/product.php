@@ -7,6 +7,15 @@
         return pdo_query($sql);
     }
 
+    function product_select_all_innerjoin(){
+        $sql = "SELECT p.id,p.name,p.image,p.price,p.detail,p.bit_active,clr.name_color,cap.name_capacity, cate.name_cate
+        from products p
+        inner join colors clr on clr.id = p.color
+        inner join capacity cap on cap.id = p.capacity
+        inner join categories cate on cate.id = p.id_categories";
+        return pdo_query($sql);
+    }
+
     // Gọi hàm danh mục theo id
     function product_select_id($id){
         $sql = "SELECT * from products where id=?";
