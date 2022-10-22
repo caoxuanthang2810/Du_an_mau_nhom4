@@ -33,16 +33,16 @@ require_once "./index.php";
       </div>
       <!-- sản phẩm -->
 
-      <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
+      <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300">
         <?php foreach ($item as $items) : ?>
-          <a href="./index.php?detail" class="text-center m-auto">
-            <div>
-              <img class="w-[80%] h-[280px]" src="<?= $items['image'] ?>" alt="">
+          <a href="./index.php?detail" class="text-center mx-auto mt-3 ">
+            <div class="border-2 border-gray-500 rounded-2xl ">
+              <img class="w-5/6 h-3/4 mx-auto" src="<?= $items['image'] ?>" alt="">
               <div class="text-2xl font-normal hover:text-lime-500 "><?= $items['name'] ?></div>
               <div class="text-red-500 font-bold">
                 <?= $items['price'] ?>
               </div>
-              <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4">Mua</button>
+              <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4 rounded-lg">Mua</button>
 
 
             </div>
@@ -70,16 +70,16 @@ require_once "./index.php";
       <h1 class="text-4xl text-red-700 font-bold mt-5">Sản phẩm bán chạy</h1>
       <div class="mt-10 bg-gray-300 mb-3">
 
-        <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300 ">
+        <div class="mt-6 grid grid-cols-4 gap-4  ">
           <?php foreach ($pro as $items) : ?>
             <a href="./index.php?detail">
-              <div class="text-center mx-auto">
-                <img class="w-[80%] h-[250px]" src="<?= $items['image'] ?>" alt="">
+              <div class="text-center mx-auto border-2 border-gray-500 rounded-3xl mt-3">
+                <img class="w-5/6 h-[230px] mx-auto" src="<?= $items['image'] ?>" alt="">
                 <div class="text-2xl font-normal hover:text-lime-500 "><?= $items['name'] ?></div>
                 <div class="text-red-500 font-bold">
                   <?= $items['price'] ?>
                 </div>
-                <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4">Mua</button>
+                <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4 rounded-lg">Mua</button>
 
                
               </div>
