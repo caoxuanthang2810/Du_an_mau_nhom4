@@ -146,6 +146,7 @@
         <div class="block mt-6">
           <h1 class="text-[24px] py-3">Sản Phẩm Tương Tự</h1>
           <div class="grid grid-cols-4 gap-2">
+
             <div>
               <a href="../detail/index.html?id=${book.id}">
                 <div class="w-[250px] mx-auto">
@@ -157,6 +158,7 @@
                 </div>
               </a>  
             </div>
+
             <div>
               <a href="../detail/index.html?id=${book.id}">
                 <div class="w-[250px] mx-auto">

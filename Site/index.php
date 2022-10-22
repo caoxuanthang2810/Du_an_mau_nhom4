@@ -26,6 +26,12 @@
         $id = $_REQUEST['id'];
 
         $product_detail = product_select_all_innerjoin_id($id);
+
+        // $id_categories = $_REQUEST["id_categories"];
+
+        // var_dump($id_categories);
+
+        // product_select_all_innerjoin_cate($id_categories);
         extract($product_detail);
 
         $VIEW_NAME = 'detail.php';
@@ -90,15 +96,15 @@
 
     }
 
-    // if(isset($_POST["btn_comment"])){
-    //     $id_product = $_REQUEST['id'];
-    //     $content = $_POST['content'];
+    if(isset($_POST["btn_comment"])){
+        $id_product = $_REQUEST['id'];
+        $content = $_POST['content'];
 
-    //     $id_user = $_SESSION['email'];
-    //     $time = getdate();
+        $id_user = $_SESSION['email'];
+        $time = getdate();
 
-    //     comment_insert($content,$time,$id_product,$id_user);
-    // }
+        comment_insert($content,$time,$id_product,$id_user);
+    }
 
   include_once "./layout.php";
 ?>
