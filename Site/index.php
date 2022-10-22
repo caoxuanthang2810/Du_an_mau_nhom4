@@ -90,15 +90,15 @@
 
     }
 
-    // if(isset($_POST["btn_comment"])){
-    //     $id_product = $_REQUEST['id'];
-    //     $content = $_POST['content'];
+    if(isset($_POST["btn_comment"])){
+        $id_product = $_REQUEST['id'];
+        $content = $_POST['content'];
 
-    //     $id_user = $_SESSION['email'];
-    //     $time = getdate();
+        $id_user = $_SESSION['id_user'];
+        $time = getdate();
 
-    //     comment_insert($content,$time,$id_product,$id_user);
-    // }
+        comment_insert($content,$time,$id_product,$id_user);
+    }
 
   include_once "./layout.php";
 ?>

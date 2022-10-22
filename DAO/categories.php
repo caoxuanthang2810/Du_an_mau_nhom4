@@ -21,7 +21,7 @@
     
     // Update Danh mục 
     function category_update($name,$id){
-        $sql = "UPDATE categories SET name = ? WHERE id = ?";
+        $sql = "UPDATE categories SET name_cate = ? WHERE id = ?";
         pdo_execute($sql,$name,$id);
     }
 
