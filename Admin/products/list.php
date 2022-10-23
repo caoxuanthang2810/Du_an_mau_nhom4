@@ -1,8 +1,3 @@
-<?php
-    
-
-?>
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -71,7 +66,6 @@
                                     <?php 
                                     foreach($items as $item){
                                         extract($item)
-                                    
                                     ?>
                                 <tr>
                                     <td>
@@ -85,9 +79,6 @@
                                     </td>
                                     <td>
                                         <img  style="width:100px; height: 100px"src="<?=$item['image'];?>">
-                                        <?php 
-                                            // var_dump($key["image_file"]);
-                                        ?>
                                     </td>
                                     <td>
                                         <?= $detail?>

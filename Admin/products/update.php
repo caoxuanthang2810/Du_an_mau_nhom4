@@ -18,7 +18,10 @@
                 <input type="text" name="name" value="<?=$name?>" class="border pl-2 border-[#000] h-[40px] w-[75%] rounded-[10px]">
             </div>
 
-           
+            <div class="pt-5">
+                <div class="font-bold mb-3 text-[18px]">Hình ảnh</div>
+                <input type="file" name="image" value="<?=$image?>" class="h-[40px] w-[75%]">
+            </div>    
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Giá sản phẩm</div>
@@ -27,28 +30,27 @@
 
             <div class="pt-5 ">
                 <div class="font-bold mb-3 text-[18px]">Mô tả sản phẩm</div>
-                <!-- <input type="text" name="detail" class="border pl-2 border-[#000] h-[40px] w-[90%]"> -->
                 <input name="detail" value="<?=$detail?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Trạng thái</div>
-                <input name="bit_active" value="<?=$bit_active?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
+                <input type="number" name="bit_active" value="<?=$bit_active?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại Màu</div>
-                <input name="color" value="<?=$color?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
+                <input type="number" name="color" value="<?=$color?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Dung lượng</div>
-                <input name="capacity" value="<?=$capacity?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
+                <input type="number" name="capacity" value="<?=$capacity?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5">
                 <div class="font-bold mb-3 text-[18px]">Loại điện thoại</div>
-                <input name="id_categories" value="<?=$id_categories?>" id="" class="border pl-2 border-[#000] h-[100px] w-[90%]"></input>
+                <input type="number" name="id_categories" value="<?=$id_categories?>" class="border pl-2 border-[#000] h-[40px] w-[25%] rounded-[10px]">
             </div>
 
             <div class="pt-5 flex justify-center">
