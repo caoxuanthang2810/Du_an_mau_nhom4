@@ -48,7 +48,7 @@
         // var_dump($id_categories);
 
         // product_select_all_innerjoin_cate($id_categories);
-        extract($product_detail);
+        extract($product_detail); // Kiểm tra từng khóa để xem liệu khóa đó có tên biến hợp lệ hay không. Nó cũng kiểm tra sự va chạm với các biến hiện có trong bảng ký hiệu.
 
         $VIEW_NAME = 'detail.php';
     }else if(isset($_GET['profile'])){
