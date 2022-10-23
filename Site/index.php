@@ -16,6 +16,12 @@
     // + require: import file khác, nếu import lỗi => các câu lệnh bên dưới sẽ dừng
     // + include: import file khác, nếu import lỗi => các câu lệnh bên dưới vẫn chạy
 
+
+//     PHP _GET và _POST là hai phương thức dùng để thu thập dữ liệu form, đây cũng là phương thức dùng để chuyển dữ liệu từ máy cá nhân (client) lên máy chủ (server).
+// Cả hai _GET và _POST đều tạo một mảng với cặp key/value, với key chính là thuộc tính name của các thành phần form, còn value chính là giá trị của thành phần đó với name tương ứng.
+// _GET thường dùng cho dữ liệu không quan trọng, không cần bảo mật, thể hiện rõ trên tham số khi submit hay click từ liên kết.
+// _POST thường dùng cho dữ liệu quan trọng, cần bảo mật như thông tin login, payment, ... _POST nhận được thông qua phương thức HTTP.
+
     $item = get_product_top();
     $pro = product_selectall();
 
@@ -37,7 +43,7 @@
         $id = $_REQUEST['id'];
 
         $product_detail = product_select_all_innerjoin_id($id);
-        extract($product_detail);
+        extract($product_detail);// Kiểm tra từng khóa để xem liệu khóa đó có tên biến hợp lệ hay không. Nó cũng kiểm tra sự va chạm với các biến hiện có trong bảng ký hiệu.
 
         $VIEW_NAME = 'detail.php';
     }else if(isset($_GET['profile'])){
