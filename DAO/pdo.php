@@ -69,8 +69,6 @@
         $stmt -> execute();
         $Result = $stmt -> fetch(PDO::FETCH_ASSOC);
 
-        // $Result = $connect->query($sql);
-
         return $Result;
     }
 ?>
