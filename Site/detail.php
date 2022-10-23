@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +26,7 @@
         <div class="flex mt-[48px]">
           <div class="mr-6">
             <div class="w-[300px]">
-              <img class="w-full h-full" src="<?=$image?>" alt="Ảnh bị lỗi hoặc chưa có">
+              <img class="w-full h-full" src="../Asset/img/products/<?= $image ?>" alt="Ảnh bị lỗi hoặc chưa có">
             </div>
 
             <div class="flex mt-6">

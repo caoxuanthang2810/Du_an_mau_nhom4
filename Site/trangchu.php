@@ -37,7 +37,7 @@ require_once "./index.php";
         <?php foreach ($items as $item) : ?>
           <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
             <div class="border-2 border-gray-500 rounded-2xl ">
-              <img class="w-5/6 h-3/4 mx-auto" src="<?=$item['image']?>" alt="">
+              <img class="w-5/6 h-3/4 mx-auto" src="../Asset/img/products/<?=$item['image']?>" alt="">
               <div class="text-2xl font-normal hover:text-lime-500 "><?= $item['name'] ?></div>
               <div class="text-red-500 font-bold">
                 <?= $item['price'] ?>
@@ -74,7 +74,7 @@ require_once "./index.php";
           <?php foreach ($pro as $item) : ?>
             <a href="./index.php?detail&id=<?=$item['id']?>">
               <div class="text-center mx-auto border-2 border-gray-500 rounded-3xl mt-3">
-                <img class="w-5/6 h-[230px] mx-auto" src="<?= $item['image'] ?>" alt="">
+                <img class="w-5/6 h-[230px] mx-auto" src="../Asset/img/products/<?= $item['image'] ?>" alt="">
                 <div class="text-2xl font-normal hover:text-lime-500 "><?= $item['name'] ?></div>
                 <div class="text-red-500 font-bold">
                   <?= $item['price'] ?>

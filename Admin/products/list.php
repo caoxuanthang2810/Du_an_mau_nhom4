@@ -78,7 +78,7 @@
                                         <?=$price?>
                                     </td>
                                     <td>
-                                        <img  style="width:100px; height: 100px"src="<?=$item['image'];?>">
+                                        <img  style="width:100px; height: 100px"src="../../Asset/img/products/<?=$item['image'];?>">
                                     </td>
                                     <td>
                                         <?= $detail?>
