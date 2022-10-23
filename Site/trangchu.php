@@ -34,13 +34,13 @@ require_once "./index.php";
       <!-- sản phẩm -->
 
       <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300">
-        <?php foreach ($item as $items) : ?>
-          <a href="./index.php?detail&id=<?=$items["id"]?>" class="text-center mx-auto mt-3 ">
+        <?php foreach ($items as $item) : ?>
+          <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
             <div class="border-2 border-gray-500 rounded-2xl ">
-              <img class="w-5/6 h-3/4 mx-auto" src="<?= $items['image'] ?>" alt="">
-              <div class="text-2xl font-normal hover:text-lime-500 "><?= $items['name'] ?></div>
+              <img class="w-5/6 h-3/4 mx-auto" src="<?=$item['image']?>" alt="">
+              <div class="text-2xl font-normal hover:text-lime-500 "><?= $item['name'] ?></div>
               <div class="text-red-500 font-bold">
-                <?= $items['price'] ?>
+                <?= $item['price'] ?>
               </div>
               <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4 rounded-lg">Mua</button>
 
@@ -71,13 +71,13 @@ require_once "./index.php";
       <div class="mt-10 bg-gray-300 mb-3">
 
         <div class="mt-6 grid grid-cols-4 gap-4  ">
-          <?php foreach ($pro as $items) : ?>
-            <a href="./index.php?detail&id=<?=$items["id"]?>">
+          <?php foreach ($pro as $item) : ?>
+            <a href="./index.php?detail&id=<?=$item['id']?>">
               <div class="text-center mx-auto border-2 border-gray-500 rounded-3xl mt-3">
-                <img class="w-5/6 h-[230px] mx-auto" src="<?= $items['image'] ?>" alt="">
-                <div class="text-2xl font-normal hover:text-lime-500 "><?= $items['name'] ?></div>
-<div class="text-red-500 font-bold">
-                  <?= $items['price'] ?>
+                <img class="w-5/6 h-[230px] mx-auto" src="<?= $item['image'] ?>" alt="">
+                <div class="text-2xl font-normal hover:text-lime-500 "><?= $item['name'] ?></div>
+                <div class="text-red-500 font-bold">
+                  <?= $item['price'] ?>
                 </div>
                 <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4 rounded-lg">Mua</button>
 

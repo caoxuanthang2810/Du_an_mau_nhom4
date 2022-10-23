@@ -5,9 +5,6 @@
     require_once "../DAO/product.php";
     require_once "../DAO/comment.php";
     
-    $item = get_product_top();
-    $pro = product_selectall();
-
     if(isset($_GET['danhmuc'])){
         $VIEW_NAME = 'danhmuc.php';
     }else if(isset($_GET['gioithieu'])){
@@ -40,6 +37,9 @@
         $items = user_selectall(); 
         $VIEW_NAME = 'profile.php';   
     }else{
+        $items = get_product_top();
+        $pro = product_selectall();
+
         $VIEW_NAME = 'trangchu.php';
     }
 
@@ -96,15 +96,15 @@
 
     }
 
-    if(isset($_POST["btn_comment"])){
-        $id_product = $_REQUEST['id'];
-        $content = $_POST['content'];
+    // if(isset($_POST["btn_comment"])){
+    //     $id_product = $_REQUEST['id'];
+    //     $content = $_POST['content'];
 
-        $id_user = $_SESSION['email'];
-        $time = getdate();
+    //     $id_user = $_SESSION['email'];
+    //     $time = getdate();
 
-        comment_insert($content,$time,$id_product,$id_user);
-    }
+    //     comment_insert($content,$time,$id_product,$id_user);
+    // }
 
   include_once "./layout.php";
 ?>
