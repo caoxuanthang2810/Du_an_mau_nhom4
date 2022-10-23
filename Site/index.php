@@ -4,7 +4,25 @@
     require_once "../DAO/users.php";
     require_once "../DAO/product.php";
     require_once "../DAO/comment.php";
-    
+    // Session cũng là một cách để lưu thông tin của người dùng để sử dụng trên nhiều trang. 
+    // Session khác với Cookies ở chỗ, session được lưu ở máy chủ thay vì lưu ở máy người dùng. 
+    // Do đó, ngay khi thoát trình duyệt, session sẽ bị mất.
+
+
+    // sự giống nhau và khác nhau giữa require và include
+    // - sự giống nhau: require và include đều dùng để import file php khác vào file php đang chạy
+    // - sự khác nhau: 
+    // + require: import file khác, nếu import lỗi => các câu lệnh bên dưới sẽ dừng
+    // + include: import file khác, nếu import lỗi => các câu lệnh bên dưới vẫn chạy
+
+
+//     PHP _GET và _POST là hai phương thức dùng để thu thập dữ liệu form, đây cũng là phương thức dùng để chuyển dữ liệu từ máy cá nhân (client) lên máy chủ (server).
+// Cả hai _GET và _POST đều tạo một mảng với cặp key/value, với key chính là thuộc tính name của các thành phần form, còn value chính là giá trị của thành phần đó với name tương ứng.
+// _GET thường dùng cho dữ liệu không quan trọng, không cần bảo mật, thể hiện rõ trên tham số khi submit hay click từ liên kết.
+// _POST thường dùng cho dữ liệu quan trọng, cần bảo mật như thông tin login, payment, ... _POST nhận được thông qua phương thức HTTP.
+
+
+
     if(isset($_GET['danhmuc'])){
         $items = product_selectall();
         $VIEW_NAME = 'danhmuc.php';
