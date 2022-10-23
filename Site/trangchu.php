@@ -34,32 +34,17 @@ require_once "./index.php";
       <!-- sản phẩm -->
 
       <div class="mt-6 grid grid-cols-4 gap-4 bg-gray-300">
-        <?php foreach ($items as $item) : ?>
-          <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
-            <div class="border-2 border-gray-500 rounded-2xl ">
-              <img class="w-5/6 h-3/4 mx-auto" src="../Asset/img/products/<?=$item['image']?>" alt="">
-              <div class="text-2xl font-normal hover:text-lime-500 "><?= $item['name'] ?></div>
-              <div class="text-red-500 font-bold">
-                <?= $item['price'] ?>
-              </div>
-              <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4 rounded-lg">Mua</button>
+      <?php foreach($items as $item): ?>
+      <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
+    <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
+      <img src="../Asset/img/products/<?=$item['image']?>" class="pt-4 m-auto   hover:scale-75 duration-100" alt="">
+      <p class="text-xl font-semibold pt-3"><?= $item['name'] ?></p>
+      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?= $item['price'] ?></h5>
+      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
+    </div>
+    </a>
+    <?php endforeach?>
 
-
-            </div>
-          </a>
-          <!-- <div class="text-center">
-                <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
-                <a href="" class="text-2xl font-normal  hover:text-lime-500">Iphone 14 pro max</a>
-              </div>
-              <div class="text-center">
-                <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="">
-                <a href="" class="text-2xl font-normal hover:text-lime-500 ">Iphone 14 pro max</a>
-              </div>
-              <div class="text-center">
-                <img class="w-full h-[370px]" src="../Asset/img/content/Ip14.jpg" alt="" >
-                <a href="" class="text-2xl font-normal hover:text-lime-500">Iphone 14 pro max</a>
-              </div> -->
-        <?php endforeach; ?>
       </div>
 
       <!-- banner2 -->
@@ -71,19 +56,17 @@ require_once "./index.php";
       <div class="mt-10 bg-gray-300 mb-3">
 
         <div class="mt-6 grid grid-cols-4 gap-4  ">
-          <?php foreach ($pro as $item) : ?>
-            <a href="./index.php?detail&id=<?=$item['id']?>">
-              <div class="text-center mx-auto border-2 border-gray-500 rounded-3xl mt-3">
-                <img class="w-5/6 h-[230px] mx-auto" src="../Asset/img/products/<?= $item['image'] ?>" alt="">
-                <div class="text-2xl font-normal hover:text-lime-500 "><?= $item['name'] ?></div>
-                <div class="text-red-500 font-bold">
-                  <?= $item['price'] ?>
-                </div>
-                <button class="bg-green-500 hover:bg-red-500 w-[100px] mb-4 rounded-lg">Mua</button>
+        <?php foreach($pro as $item): ?>
+      <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
+    <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
+      <img src="../Asset/img/products/<?=$item['image']?>" class="pt-4 m-auto   hover:scale-75 duration-100" alt="">
+      <p class="text-xl font-semibold pt-3"><?= $item['name'] ?></p>
+      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?= $item['price'] ?></h5>
+      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
+    </div>
+    </a>
+    <?php endforeach?>
 
-               
-              </div>
-            <?php endforeach; ?>
         </div>
       </div>
     </div>

@@ -1,3 +1,7 @@
+<?php
+require_once "./index.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -132,65 +136,20 @@
 
   </div>
   <!--điện thoại-->
-  <div class=" flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto ">
+
+
+  <div class=" flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto grid grid-cols-4 gap-4">
+    <?php foreach($items as $item): ?>
+      <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
     <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto   hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">SAM SUNG A-20</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold">21.000.000</h5>
+      <img src="../Asset/img/products/<?=$item['image']?>" class="pt-4 m-auto   hover:scale-75 duration-100" alt="">
+      <p class="text-xl font-semibold pt-3"><?= $item['name'] ?></p>
+      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?= $item['price'] ?></h5>
       <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
     </div>
+    </a>
+    <?php endforeach?>
 
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75 " alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">40.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-  </div>
-
-  <div class=" flex justify-between h-4/5 bg-red-400 pt-8 pb-8  max-w-screen-2xl m-auto">
-    <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75 " alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl ">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp" class="pt-4 pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro </p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-
-    <div class="text-center mr-10 bg-white w-60 rounded-3xl">
-      <img src="../Asset/img/content/637985700630020572_ip-14-pro-max-tim.webp " class="pt-4  pt-4 m-auto  hover:scale-75" alt="">
-      <p class="text-xl font-semibold pt-3">iPhone 14 Pro Max</p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2 font-bold">30.000.000</h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
   </div>
 </body>
 

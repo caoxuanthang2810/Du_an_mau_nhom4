@@ -6,6 +6,7 @@
     require_once "../DAO/comment.php";
     
     if(isset($_GET['danhmuc'])){
+        $items = product_selectall();
         $VIEW_NAME = 'danhmuc.php';
     }else if(isset($_GET['gioithieu'])){
         $VIEW_NAME = 'gioithieu.php';     
