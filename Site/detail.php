@@ -201,22 +201,41 @@
 
             </div>
             
-            <form class="flex justify-center mt-3" method="POST">
+            <!-- <form class="flex justify-center mt-3" method="POST">
                 <?php
-                    include "./index.php";
-                    if (isset($_SESSION['email'])) {
-                ?>
-                    <input type="text" name="content" placeholder="Bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]">
-                <?php
-                    }else{
-                ?>
-                    <input type="text" placeholder="Bạn phải đăng nhập mới được bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]" disabled>
-                <?php
-                    }
+                //     include "./index.php";
+                //     if (isset($_SESSION['email'])) {
+                // ?>
+                //     <input type="text" name="content" placeholder="Bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]">
+                // <?php
+                //     }else{
+                // ?>
+                //     <input type="text" placeholder="Bạn phải đăng nhập mới được bình luận..." class="border w-1/2 border-[#000] pl-2 rounded-[25px]" disabled>
+                // <?php
+                //     }
                 ?>
                 
                 <button class="bg-[#FFB800] w-[100px] h-[50px] ml-6 rounded-[25px]" name="btn_comment">Gứi</button>
-            </form>
+            </form> -->
+
+            <?php
+                include_once "./index.php";
+                if(isset($_SESSION['id'])&&($_SESSION['id']>0)){
+                  if(isset($_SESSION['fullname'])&&($_SESSION['fullname']!="")){
+                  $fullname = $_SESSION['fullname'];
+                  }else{
+                    $fullname = '';
+                  }
+             ?>
+            <form class="flex justify-center mt-3" method="POST">
+              <input type="text" name="name" value="<?=$fullname?>">
+              <input type="hidden" name="id_product" value="<?=$_GET['id_product']?>">
+              <textarea name="content" id="" cols="30" rows="10"></textarea>
+              <button class="bg-[#FFB800] w-[100px] h-[50px] ml-6 rounded-[25px]" name="btn_comment">Gứi</button>
+              
+            </form><?}else{
+              echo "<a href = './index.php?login'>Bạn vui lòng đăng nhập</a>";
+            }?>
           </div>
 
         </div>

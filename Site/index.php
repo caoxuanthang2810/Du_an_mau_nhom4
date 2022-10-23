@@ -68,6 +68,7 @@
             if($email == $Result['email']){
                 $_SESSION['email'] = $email;
                 $_SESSION['id'] = $id;   
+                $_SESSION['fullname'] = $fullname;
                 $VIEW_LOGIN = 'login-success.php';
                 // echo("Đăng nhập thành công");
                 $VIEW_NAME = 'trangchu.php';
@@ -91,9 +92,13 @@
     }
 
     if(isset($_POST["btn_comment"])){
-        $id_product = $_REQUEST['id'];
-        $content = $_POST['content'];
+        // $id_product = $_REQUEST['id'];
+        // $content = $_POST['content'];
 
+        // $id_user = $_SESSION['id_user'];
+        $fullname = $_POST['name'];
+        $content = $_POST['content'];
+        $id_product = $_REQUEST['id'];
         $id_user = $_SESSION['id_user'];
         $time = getdate();
 
