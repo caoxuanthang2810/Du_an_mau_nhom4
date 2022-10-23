@@ -5,6 +5,17 @@
     require_once "../DAO/product.php";
     require_once "../DAO/comment.php";
     
+ // Session cũng là một cách để lưu thông tin của người dùng để sử dụng trên nhiều trang. 
+    // Session khác với Cookies ở chỗ, session được lưu ở máy chủ thay vì lưu ở máy người dùng. 
+    // Do đó, ngay khi thoát trình duyệt, session sẽ bị mất.
+
+
+    // sự giống nhau và khác nhau giữa require và include
+    // - sự giống nhau: require và include đều dùng để import file php khác vào file php đang chạy
+    // - sự khác nhau: 
+    // + require: import file khác, nếu import lỗi => các câu lệnh bên dưới sẽ dừng
+    // + include: import file khác, nếu import lỗi => các câu lệnh bên dưới vẫn chạy
+
     $item = get_product_top();
     $pro = product_selectall();
 
