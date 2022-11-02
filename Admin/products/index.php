@@ -45,15 +45,14 @@
             $target_file = $target_dir . $image;
             $allowUpload = true;
             $allowtype = ['jpg', 'png', 'jpeg', 'gif'];
-            $maxfilesize = 2000000;// kích cỡ lớn nhất mà file có thể upload (đơn vị bytes)
-            // lấy phần mở rộng của file (tức là đuuôi file sau dấu chấm)
+            $maxfilesize = 2000000;
+            
             $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
-            if (!in_array($imageFileType, $allowtype)) {// in_array : kiểm tra $imageFileType có nằm trong mảng $allowtype hay k
+            if (!in_array($imageFileType, $allowtype)) {// in_a
                 $error['img_type'] = "File không được định dạng";
                 $allowUpload = false;
             }
-            // kiểm tra kích thước file không vượt qua giới hạn cho phép
-    
+            
             if ($_FILES['image']['size'] > $maxfilesize) {
                 echo " File không vượt quá " . $maxfilesize . "(Bytes)";
                 $allowUpload = false;
