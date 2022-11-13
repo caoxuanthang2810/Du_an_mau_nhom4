@@ -13,9 +13,7 @@ require_once "./index.php";
   <link rel="stylesheet" href="">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./Asset/css/base.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
 
@@ -139,16 +137,16 @@ require_once "./index.php";
 
 
   <div class=" flex justify-between  h-4/5 bg-red-400 pt-8  max-w-screen-2xl m-auto grid grid-cols-4 gap-4">
-    <?php foreach($items as $item): ?>
-      <a href="./index.php?detail&id=<?=$item['id']?>" class="text-center mx-auto mt-3 ">
-    <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
-      <img src="../Asset/img/products/<?=$item['image']?>" class="pt-4 m-auto   hover:scale-75 duration-100" alt="">
-      <p class="text-xl font-semibold pt-3"><?= $item['name'] ?></p>
-      <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?= $item['price'] ?></h5>
-      <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
-    </div>
-    </a>
-    <?php endforeach?>
+    <?php foreach ($items as $item) : ?>
+      <a href="./index.php?detail&id=<?= $item['id'] ?>" class="text-center mx-auto mt-3 ">
+        <div class="text-center ml-10 bg-white w-60 h-96 rounded-3xl ">
+          <img src="../Asset/img/products/<?= $item['image'] ?>" class="pt-4 m-auto   hover:scale-75 duration-100" alt="">
+          <p class="text-xl font-semibold pt-3"><?= $item['name'] ?></p>
+          <h5 class="text-xl text-orange-700 pt-2 pb-2  font-bold"><?= $item['price'] ?></h5>
+          <button class="text-xl bg-lime-500 text-white w-40 rounded-3xl">Đặt mua</button>
+        </div>
+      </a>
+    <?php endforeach ?>
 
   </div>
 </body>
